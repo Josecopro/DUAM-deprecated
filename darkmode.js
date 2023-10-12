@@ -69,12 +69,20 @@ const DUAMBASEDEDATOS = [{
           descripcion:"Aqui encontraras las carreras",
           url: "carreras.html",
         },
+        //Ingenieria subdivisiones:
         {
           img: "https://svgshare.com/i/xq_.svg",
           title: "Ingeniería civil",
           descripcion:"Aqui encontraras las carreras",
           url: "carreras.divisiones/Ingenieriassubdivisiones/ingenieriacivil.html",
         },
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Ingeniería mecanica",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingeneriamecanica.html",
+        },
+        //fin ingenieria subdivisiones
         {
           img: "https://svgshare.com/i/xq_.svg",
           title: "Administración de negocios",
@@ -274,9 +282,10 @@ function cambiarNombresEtiquetas() {
   //filtrador de universidades en las que se encuentra un pregrado:
 
   const universidades = [
-    { nombre: 'Universidad Eafit', url: 'https://www.youtube.com/watch?v=psXuQHGFD80', carreras: 'administraciondenegocios//negociosinternacionales//enfermeria//ingenieriacivil//ingenieriadiseñodeproductos' },
+    { nombre: 'Universidad Eafit', url: 'https://www.youtube.com/watch?v=psXuQHGFD80', carreras: 'administraciondenegocios//negociosinternacionales//enfermeria//ingenieriacivil//ingenieriadiseñodeproductos//ingenieriamecanica' },
     { nombre: 'Universidad de prueba', url: 'https://www.universidadXYZ.com', carreras: 'enfermeria//psicologia//' },
     { nombre: 'Unal', url: 'https://admisiones.unal.edu.co/pregrado/', carreras: 'otracarrera//enfermeria' },
+    
   ];
   
 // Función para crear y agregar botones de universidades según la clase del contenedor
