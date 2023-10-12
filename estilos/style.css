@@ -1,0 +1,739 @@
+/* Google font "Poppins" */
+/**seccion buscador */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/desigers');
+
+                
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.search input {
+    padding: 3px 0px 3px 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    width: 0px;
+}
+
+.search i {
+    cursor: pointer;
+    transition: .4s linear;
+}
+
+.search i:hover {
+    color: #fff;
+}
+
+.search .search_bx2 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid #fff; */
+    top: 35px;
+    left: -10px;
+    background: rgba(158, 157, 157, 0.3);
+    border-radius: 10px;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.search .search_bx2::-webkit-scrollbar {
+    width: 7px;
+    background: rgb(184, 184, 184, .3);
+    border-radius: 20px;
+}
+
+.search .search_bx2::-webkit-scrollbar-thumb {
+    background: rgb(184, 184, 184, .7);
+    border-radius: 20px;
+}
+
+.search .search_bx2 a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+}
+
+.search .search_bx2 a:hover {
+    background: rgb(184, 184, 184, .6);
+}
+
+.search .search_bx2 a img {
+    width: 30px;
+    height: 45px;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+
+.search .search_bx2 a .content2 {
+    color: #fff;
+}
+
+.search .search_bx2 a .content2 h6 {
+    font-size: 13px;
+}
+
+.search .search_bx2 a .content2 p {
+    color: rgb(255, 255, 255, .7);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* javascript classes start  */
+
+.search .search_input {
+    width: 180px;
+}
+
+
+/* javascript classes end  */
+
+/**fin buscador**/
+
+
+:root {
+    --azuloscuroDUAM: #004AAD;
+    --aguamarinaDUAM: #35C19C;
+    --amarilloDUAM: #EDD140;
+    --grisclaroDUAM: #B2B7B2;
+    --grisoscuroDUAM: #404040;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--grisoscuroDUAM);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Navegador{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header {
+    background-color: var(--azuloscuroDUAM);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+  }
+  
+  .secciondrop{
+    color: var(--grisoscuroDUAM);
+    text-decoration: none;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 25px;
+  }
+  
+  .drop{
+    color: var(--grisoscuroDUAM);
+    text-decoration: none;
+    font-size: 22px;
+    transition: all 0.4s ease-in-out
+  }
+  
+  nav a {
+    color: var(--grisoscuroDUAM);
+    text-decoration: none;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 25px;
+  }
+  
+  nav a:hover {
+    background-color: var(--grisclaroDUAM);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: var(--azuloscuroDUAM);
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: var(--aguamarinaDUAM);
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: var(--grisoscuroDUAM);
+    color: var(--grisclaroDUAM);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  #dark-mode-toggle{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .dark-mode #dark-mode-toggle{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  footer p {
+    margin: 0;
+  }
+  
+  .descripcion {
+    font-size: 1rem;
+  }
+  
+  @media (min-width: 576px) {
+    .descripcion {
+      font-size: 1.2rem;
+    }
+    .slidebecas{
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .descripcion {
+      font-size: 1.4rem;
+    }
+    .slidebecas{
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .descripcion {
+      font-size: 1.6rem;
+    }
+    .slidebecas{
+      font-size: 2rem;
+    }
+  }
+  
+  .dark-mode body{
+    background-color: black;
+    color: white;
+  }
+  .dark-mode .descripcion{
+    color: white;
+  }
+  .dark-mode header {
+    background-color: var(--aguamarinaDUAM);
+    color: var(--grisoscuroDUAM);
+  }
+  
+  .dark-mode nav a {
+    color: var(--grisclaroDUAM);
+  }
+  
+  .dark-mode nav a:hover {
+    background-color: var(--grisoscuroDUAM);
+  }
+  
+  .dark-mode h1 {
+    color: white;
+  }
+  
+  .dark-mode h2 {
+    color: white;
+  }
+  .dark-mode h3 {
+    color: white;
+  }
+  .dark-mode a{
+    color: white;
+  }
+  .dark-mode li{
+    color: white;
+  }
+  .dark-mode p {
+    color: var(--grisclaroDUAM);
+  }
+  
+  .dark-mode .display-4{
+    color: var(--azuloscuroDUAM);
+  }
+  .Navegador{
+    background-color: whitesmoke;
+  }
+  .card-img-top{
+    height: 8rem;
+    width: 8rem;
+  }
+  @media (max-width: 768px) {
+    .separadordetarjetas{
+      display: none;
+      background-color: #EDD140;
+    }
+  }
+  
+  .card-body{
+  color: black;
+  }
+  .imgc{
+  height: 400px;
+  }
+  .logo{
+  height: 50px;
+  border-radius: 20%;
+  }
+  .nav-a{
+  font-size: 23px;
+  padding: 0px;
+  font-weight: 500;
+  }
+  
+  .nav-tog{
+  background-color: var(--grisclaroDUAM);
+  }
+  .fotos{
+  padding-top: 45px;
+  width: 250px;
+  height: 250px;
+  vertical-align: super;
+  }
+  .separador{
+  margin-top: 10%;
+  }
+  .Nombresintegrantes{
+  font-size: 24px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .espacionombre{
+  padding-top: 5px;
+  }
+  
+  .slidebecas{
+  height: 400px;
+  }
+  .colordefondocarrusel{
+  margin-top: -2%;
+  background-color: var(--grisclaroDUAM);
+  }
+  
+  .decoracionslide{
+    background-color: var(--grisclaroDUAM);
+  }
+  .tituloscarreras{
+    font-size: 3rem;
+  }
+  
+  .botonesdecarreras{
+    background-color:var(--grisclaroDUAM);
+  }
+  /**  INICIO CSS PREGRADOS DESCRIPCION  **/
+.titulo_descripcion_pregrados{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.descripcion_pregrados{
+  margin: 15px;
+  color: black;
+}
+.fila_contenedor_pregrados{
+  position: relative;
+}
+.contenedor_pregrados{
+  background-color: hsla(244, 16%, 92%, 0.6);
+  border: 2px solid hsla(244, 16%, 92%, 0.8);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+}
+.margen_de_espacio{
+  height: 120px;
+}
+.imagen_de_fondo_pregrados{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
+}
+.Universidades_en_las_que_se_encuentra{
+  position: relative;
+  background-color: #fff;
+  height: 200px;
+}
+.Cuadrado_anclado_js{
+  height: 100%;
+  width: 100%;
+  background-color: hsla(244, 16%, 92%, 0.6);
+  border: 2px solid hsla(244, 16%, 92%, 0.8);
+  border-radius: 20px;
+}
+.queso{
+  font-size: 20px;
+  background-color: #35C19C;
+  color: black;
+  font-family: Poppins;
+  margin:30px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+@media(min-width:830px){
+  .imagen_de_fondo_pregrados{
+    position: absolute;
+    width: 100%;
+    height: 89%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width:829px){
+  .queso{
+    font-size: 15px;
+    margin: 20px;
+  }
+}
+
+
+
+  /**  FIN CSS PREGRADOS DESCRIPCION  **/
+
+
+
+
+  /**Buscador:  **/
+  
+  
+  
+  
+  .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .search input {
+    padding: 3px 0px 3px 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+
+  }
+  
+  .search i {
+    color: rgb(255, 255, 255, .7);
+    font-size: 13px;
+    cursor: pointer;
+    transition: .4s linear;
+  }
+  
+  .search i:hover {
+    color: #fff;
+  }
+  
+  .search .search_bx2 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid #fff; */
+    top: 35px;
+    left: -10px;
+    background: rgb(184, 184, 184, .3);
+    border-radius: 10px;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s linear;
+  }
+  
+  .search .search_bx2::-webkit-scrollbar {
+    width: 7px;
+    background: rgb(184, 184, 184, .3);
+    border-radius: 20px;
+  }
+  
+  .search .search_bx2::-webkit-scrollbar-thumb {
+    background: rgb(184, 184, 184, .7);
+    border-radius: 20px;
+  }
+  
+  .search .search_bx2 a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+  }
+  
+  .search .search_bx2 a:hover {
+    background: rgb(184, 184, 184, .6);
+  }
+  
+  .search .search_bx2 a img {
+    width: 30px;
+    height: 45px;
+    border-radius: 5px;
+    margin: 0px 5px;
+  }
+  
+  .search .search_bx2 a .content2 {
+    color: #fff;
+  }
+  
+  .search .search_bx2 a .content2 h6 {
+    font-size: 13px;
+  }
+  
+  .search .search_bx2 a .content2 p {
+    color: rgb(255, 255, 255, .7);
+    font-size: 11px;
+    font-weight: 500;
+  }
+  
+  
+  /* javascript classes start  */
+  
+  .search .search_input {
+    width: 180px;
+  }
+  
+  
+  /* javascript classes end  */
+.objeto_videos{
+  margin: 25%;
+  max-width: calc(32px*1.778);
+  max-height: calc(18px*1.778);
+}
+.ingptext{
+  margin: 4%;
+  }
+.textomatricula{
+  margin-bottom: -14%;
+  max-width: 400px;
+  text-align: center;
+  margin-left: 15%;
+}
+
+/* Formulario PQRS y boton Ayuda*/
+.ayuda{
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  height: 40px;
+  width: 120px;
+  bottom: 10px;
+  background-color: #404040;
+  border-radius: 26px;
+  border: none;
+}
+.ayuda button{
+  background-color: #404040;
+  height: 43px;
+  width: 120px;
+  border-radius: 26px;
+  color: #fff;
+  border: none;
+}
+.ayuda :hover{
+  transition: 0.5s;
+  background-color: #B2B7B2;
+  border-radius: 26px;
+}
+
+
+.ayuda h4{
+  display: inline-block;
+}
+
+#formularioPQRS {
+  display: none;
+}
+.formularioPQRS{
+  left: 3px;
+  width: calc(1.92*210px);
+  position: fixed;
+  bottom: 5px;
+  margin: 0;
+  background: var(--amarilloDUAM);
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.formularioPQRS input[type=text], select, textarea {
+  width: 100%;
+  padding: 6px;
+  border: 2px solid #737171;
+  border-radius: 7px;
+  resize: vertical;
+  background: none;
+}
+
+.formularioPQRS label {
+  padding: 6px 6px 8px 0;
+  color: black;
+}
+
+.formularioPQRS input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -3%; 
+}
+
+.formularioPQRS input[type=submit]:hover {
+background-color: var(--aguamarinaDUAM);
+transition: 0.6s;
+}
+
+.formularioPQRS container {
+  border-radius: 5px;
+  padding: 10px;
+}
+@media screen and (max-width: 550px) {
+  .ayuda{
+    right: -40px;
+    transform: translateY(-50%) rotate(-90deg);
+    top: 25%;
+  }
+  .formularioPQRS{
+   width: 100%; 
+  }
+}   
+
+
+
+/*Index, que es DUAM */
+.con1principalp{
+  font-size: 19px;
+}
+.con1principal{
+  background: var(--aguamarinaDUAM);
+  border-radius: 23px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0;
+}
+.con1principal p{
+  margin-left: 3%;
+  text-align: center;
+}
+.con1principal h1{
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+.con1principal img{
+  margin: 2%;
+}
+
+
+
+
+/* Estilos para el pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: var(--grisclaroDUAM);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 27%;
+  margin-top: 23%;
+  width: 50%;
+  justify-content: center;
+}
+.popup-content p{
+  font-size: larger;
+  font-weight: bold;
+}
+.piripiri{
+  background-color: black;
+  color: #f2a3b3;
+}
+.piripiri pre{
+  margin-left: 15%;
+}
+.piri{
+  color: #f2a3b3;
+  font-weight: bolder;
+  font-family: 'Desigers', sans-serif;
+}
+.textoDUAM{
+  font-size: xxx-large;
+  font-weight: bold;
+  text-align: center;
+}
+.con1principalDUAM{
+  border-radius: 23px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0;
+}
+.con1principalDUAM p{
+  margin-left: 3%;
+  text-align: center;
+}
+.con1principalDUAM h1{
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+.con1principalDUAM img{
+  margin: 2%;
+}

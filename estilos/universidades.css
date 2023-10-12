@@ -1,0 +1,46 @@
+h2 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+nav a {
+  color: var(--grisoscuroDUAM);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  background-color: var(--grisclaroDUAM);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .universidad-button {
+    color:var(--grisoscuroDUAM);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .universidad-button:hover {
+    background-color: #35C19C;
+  }
+
+  .universidad-button:focus {
+    outline: none;
+  }
+
+  .dark-mode b{
+    color: white;
+  }
+.Tiposdeuniversidades{
+  text-align: justify;
+}
