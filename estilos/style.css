@@ -568,6 +568,7 @@
   background-color: #404040;
   border-radius: 26px;
   border: none;
+  z-index: 100;
 }
 .ayuda button{
   background-color: #404040;
@@ -600,6 +601,7 @@
   background: var(--amarilloDUAM);
   border-radius: 20px;
   transition: all 0.4s ease-in-out;
+  z-index: 100;
 }
 .formularioPQRS input[type=text], select, textarea {
   width: 100%;
