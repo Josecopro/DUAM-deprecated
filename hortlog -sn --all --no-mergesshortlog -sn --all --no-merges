@@ -1,0 +1,319 @@
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	1)/** inicio seccion buscador */
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	2)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	3)let search_icon = document.getElementById('search_icon');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	4)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	5)search_icon.addEventListener('click', () => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	6)    search.classList.toggle('search_input');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	7)})
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	8)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	9)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	10)// Movies Box Set
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	11)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	12)const DUAMBASEDEDATOS = [{
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	13)            img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	14)            title: "Ciencias basicas",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	15)            descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	16)            url: "carreras.divisiones/cienciasbasicas.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	17)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	18)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	19)            img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	20)            title: "Ciencias Sociales",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	21)            descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	22)            url: "carreras.divisiones/cienciassociales.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	23)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	24)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	25)            img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	26)            title: "Educación",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	27)            descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	28)            url: "carreras.divisiones/educacion.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	29)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	30)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	31)          img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	32)          title: "Humanidades",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	33)          descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	34)          url: "carreras.divisiones/humanidades.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	35)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	36)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	37)          img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	38)          title: "Ingenerias",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	39)          descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	40)          url: "carreras.divisiones/ingenierias.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	41)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	42)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	43)          img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	44)          title: "Salud",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	45)          descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	46)          url: "carreras.divisiones/salud",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	47)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	48)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	49)          img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	50)          title: "Servicios",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	51)          descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	52)          url: "carreras.divisiones/servicios.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	53)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	54)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	55)          img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	56)          title: "Enfermeria",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	57)          descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	58)          url: "carreras.divisiones/saludsubdivisiones/enfermeria.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	59)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	60)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	61)          img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	62)          title: "Pregrados",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	63)          descripcion:"si vamos a realizar una descripcion: pequeña descripción",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	64)          url: "carreras.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	65)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	66)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	67)          img: "https://svgshare.com/i/xq_.svg",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	68)          title: "Carreras",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	69)          descripcion:"Aqui encontraras las carreras",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	70)          url: "carreras.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	71)        },
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	72)        //Ingenieria subdivisiones:
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	73)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	74)          img: "https://svgshare.com/i/xq_.svg",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	75)          title: "Ingeniería civil",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	76)          descripcion:"Aqui encontraras las carreras",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	77)          url: "carreras.divisiones/Ingenieriassubdivisiones/ingenieriacivil.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	78)        },
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	79)        {
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	80)          img: "https://svgshare.com/i/xq_.svg",
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	81)          title: "Ingeniería mecanica",
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	82)          descripcion:"Aqui encontraras las carreras",
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	83)          url: "carreras.divisiones/Ingenieriassubdivisiones/ingeneriamecanica.html",
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	84)        },
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	85)        //fin ingenieria subdivisiones
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	86)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	87)          img: "https://svgshare.com/i/xq_.svg",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	88)          title: "Administración de negocios",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	89)          descripcion:"Aqui encontraras las carreras",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	90)          url: "carreras.divisiones/cienciassocialessubdivisiones/administraciondenegocios.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	91)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	92)        {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	93)        img: "si vamos a poner imagenes en el buscador aquí iran",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	94)        title: "???",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	95)        descripcion:"???",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	96)        url: "piripiri.html",
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	97)        },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	98)    ]
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	99)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	100)let search_bx2 = document.getElementsByClassName('search_bx2')[0];
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	101)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	102)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	103)window.addEventListener('load', () => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	104)    DUAMBASEDEDATOS.forEach(element => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	105)        const {title, descripcion, url,img } = element;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	106)        let card = document.createElement('a');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	107)        card.href = url;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	108)        card.innerHTML = ` 
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	109)        <div class="content2 d-flex justify-content-center">
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	110)            <h6>${title}</h6>
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	111)        </div>`;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	112)        search_bx2.appendChild(card);
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	113)    });
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	114)});
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	115)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	116)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	117)search.addEventListener('keyup', () => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	118)    let filter = search.value.toUpperCase();
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	119)    let a = search_bx2.getElementsByTagName('a');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	120)    for (let i = 0; i < a.length; i++) {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	121)        let b = a[i].getElementsByClassName('content2')[0];
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	122)        let c = b.getElementsByTagName('h6')[0];
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	123)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	124)        let TextValue = c.textContent || c.innerText;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	125)        if (TextValue.toUpperCase().indexOf(filter) > -1) {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	126)            a[i].style.display = '';
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	127)            search_bx2.style.visibility = "visible";
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	128)            search_bx2.style.opacity = 1;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	129)        } else {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	130)            a[i].style.display = 'none';
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	131)        }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	132)        if (search.value == 0) {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	133)            search_bx2.style.visibility = "hidden";
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	134)            search_bx2.style.opacity = 0;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	135)        }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	136)    }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	137)})
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	138)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	139)/**fin buscador */
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	140)// Función para guardar el estado del modo oscuro en el almacenamiento local
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	141)function guardarEstadoModoOscuro(estado) {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	142)  localStorage.setItem('modoOscuro', estado);
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	143)}
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	144)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	145)// Función para recuperar el estado del modo oscuro del almacenamiento local
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	146)function obtenerEstadoModoOscuro() {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	147)  return localStorage.getItem('modoOscuro');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	148)}
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	149)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	150)// Función para alternar el modo oscuro
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	151)function alternarModo() {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	152)  const body = document.body;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	153)  const navbar = document.querySelector('.navbar');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	154)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	155)  // Comprobar si el cuerpo tiene la clase 'bg-dark' para determinar el estado actual del modo oscuro
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	156)  const enModoOscuro = body.classList.toggle('bg-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	157)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	158)  // Alternar el color del texto en función del estado del modo oscuro
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	159)  body.classList.toggle('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	160)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	161)  // Alternar el color de fondo de la barra de navegación en función del estado del modo oscuro
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	162)  navbar.classList.toggle('bg-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	163)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	164)  // Guardar el estado del modo oscuro en el almacenamiento local
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	165)  guardarEstadoModoOscuro(enModoOscuro.toString());
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	166)}
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	167)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	168)// Función para cambiar la propiedad de la barra de navegación
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	169)function cambiarPropiedadNav() {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	170)  const navbar = document.querySelector('.navbar');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	171)  const nav=document.querySelector('.nav-link');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	172)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	173)  // Remover la clase 'bg-light' y alternar la clase 'bg-dark'
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	174)  navbar.classList.remove('bg-light');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	175)  navbar.classList.toggle('bg-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	176)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	177)  // Guardar el estado del modo oscuro en el almacenamiento local
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	178)  guardarEstadoModoOscuro(navbar.classList.contains('bg-dark').toString());
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	179)}
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	180)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	181)// Función para cargar el estado del modo oscuro al iniciar la página
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	182)function cargarEstadoModoOscuro() {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	183)  const estadoModoOscuro = obtenerEstadoModoOscuro();
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	184)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	185)  // Verificar el estado del modo oscuro y aplicar los estilos correspondientes
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	186)  if (estadoModoOscuro === 'true') {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	187)    document.body.classList.add('bg-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	188)    document.body.classList.add('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	189)    document.querySelector('.navbar').classList.add('bg-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	190)  }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	191)}
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	192)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	193)// Obtener el botón de alternar modo oscuro desde el DOM
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	194)const darkModeToggle = document.getElementById('dark-mode-toggle');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	195)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	196)// Agregar un event listener al botón para alternar el modo oscuro
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	197)darkModeToggle.addEventListener('click', alternarModo);
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	198)darkModeToggle.addEventListener('click', cambiarNombresEtiquetas);
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	199)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	200)// Cargar el estado del modo oscuro al iniciar la página
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	201)cargarEstadoModoOscuro();
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	202)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	203)// Función para cambiar los nombres de las etiquetas <a> y guardar el estado en el almacenamiento local
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	204)function cambiarNombresEtiquetas() {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	205)    const estadoModoOscuro = obtenerEstadoModoOscuro();
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	206)    const enlaces = document.querySelectorAll('.nav-link');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	207)    const colorletra= document.querySelectorAll('.Tiposdeuniversidades')
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	208)    const colorletralogo= document.querySelectorAll('.navbar-brand')
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	209)    const palabracambiante= document.querySelectorAll('.cambiacolor')
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	210)    const navbar = document.querySelector('.navbar');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	211)    const logo = document.getElementById('logo');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	212)    const logo2= document.getElementById('logo2');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	213)    const espacioancladoaJS= document.getElementById('fondo_de_cuadros_JS');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	214)    palabracambiante.forEach((enlace) => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	215)      if (estadoModoOscuro==='false') {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	216)        enlace.classList.remove('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	217)        enlace.classList.add('text-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	218)      } else if ((estadoModoOscuro==='true')){
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	219)        enlace.classList.remove('text-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	220)        enlace.classList.add('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	221)      }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	222)    });
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	223)    enlaces.forEach((enlace) => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	224)      if (estadoModoOscuro==='false') {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	225)        enlace.classList.remove('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	226)        enlace.classList.add('text-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	227)      } else if ((estadoModoOscuro==='true')){
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	228)        enlace.classList.remove('text-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	229)        enlace.classList.add('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	230)      }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	231)    });
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	232)    colorletra.forEach((enlace) => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	233)      if (estadoModoOscuro==='false') {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	234)        enlace.classList.remove('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	235)        enlace.classList.add('text-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	236)      } else if ((estadoModoOscuro==='true')){
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	237)        enlace.classList.remove('text-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	238)        enlace.classList.add('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	239)      }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	240)    })
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	241)    colorletralogo.forEach((enlace) => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	242)      if (estadoModoOscuro==='false') {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	243)        enlace.classList.remove('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	244)        enlace.classList.add('text-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	245)      } else if ((estadoModoOscuro==='true')){
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	246)        enlace.classList.remove('text-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	247)        enlace.classList.add('text-white');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	248)      }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	249)    })
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	250)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	251)    if (estadoModoOscuro==='true') {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	252)      logo.src = 'https://svgshare.com/i/xr0.svg';
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	253)      logo2.src = 'https://svgshare.com/i/xr0.svg';
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	254)    } else {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	255)      logo.src = 'https://svgshare.com/i/xqa.svg';
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	256)      logo2.src = 'https://svgshare.com/i/xqa.svg';
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	257)    }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	258)    if(estadoModoOscuro==='true'){
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	259)      espacioancladoaJS.classList.remove('bg-light');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	260)      espacioancladoaJS.classList.add('bg-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	261)    }else{
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	262)      espacioancladoaJS.classList.remove('bg-dark');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	263)      espacioancladoaJS.classList.add('bg-light');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	264)    }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	265)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	266)    // Guardar el estado en el almacenamiento local
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	267)    localStorage.setItem('nombresEtiquetasModificados', 'true');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	268)  }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	269)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	270)  // Verificar si los nombres de las etiquetas ya han sido modificados previamente
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	271)  const estadoNombresEtiquetas = localStorage.getItem('nombresEtiquetasModificados');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	272)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	273)  if (estadoNombresEtiquetas === 'true') {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	274)    // Si ya han sido modificados, llamar a la función para aplicar los cambios
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	275)    cambiarNombresEtiquetas();
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	276)  }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	277)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	278)  function colordeletrasdelheader() {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	279)    return localStorage.getItem('nombresEtiquetasModificados');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	280)  }
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	281)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	282)  //filtrador de universidades en las que se encuentra un pregrado:
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	283)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	284)  const universidades = [
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	285)    { nombre: 'Universidad Eafit', url: 'https://www.youtube.com/watch?v=psXuQHGFD80', carreras: 'administraciondenegocios//negociosinternacionales//enfermeria//ingenieriacivil//ingenieriadiseñodeproductos//ingenieriamecanica' },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	286)    { nombre: 'Universidad de prueba', url: 'https://www.universidadXYZ.com', carreras: 'enfermeria//psicologia//' },
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	287)    { nombre: 'Unal', url: 'https://admisiones.unal.edu.co/pregrado/', carreras: 'otracarrera//enfermeria' },
+addcf7c4	(Julian Oviedo	2023-10-12 10:01:13 -0500	288)    
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	289)  ];
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	290)  
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	291)// Función para crear y agregar botones de universidades según la clase del contenedor
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	292)function crearBotones() {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	293)  const contenedor = document.getElementById('botonesContenedor');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	294)  const claseContenedor = contenedor.classList[0]; // Obtén la clase del contenedor
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	295)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	296)  // Filtrar universidades por la clase del contenedor
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	297)  const universidadesFiltradas = universidades.filter(universidad => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	298)    const carreras = universidad.carreras.split('//');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	299)    return carreras.includes(claseContenedor);
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	300)  });
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	301)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	302)  // Crear y agregar botones para las universidades filtradas
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	303)  universidadesFiltradas.forEach(universidad => {
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	304)    const boton = document.createElement('a');
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	305)    boton.textContent = universidad.nombre;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	306)    boton.href = universidad.url;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	307)    nombreuni=universidad.nombre;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	308)    urlu=universidad.url;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	309)    boton.innerHTML= `
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	310)    <a href="${urlu}" target="_blank" class="queso">${nombreuni}<a>`;
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	311)    boton.target = '_blank'; // Abre enlace en una nueva pestaña
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	312)    boton.classList.add('boton-universidad'); // Agrega una clase para estilizar
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	313)    contenedor.appendChild(boton);
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	314)  });
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	315)}
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	316)
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	317)// Llama a la función para crear los botones
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	318)crearBotones();
+9c0c999c	( Josecopro	2023-10-11 20:47:31 -0500	319)

@@ -4,15 +4,6 @@ $usuario = "root"; // Cambia esto con tu nombre de usuario de la base de datos
 $contrasena = ""; // Cambia esto con tu contraseña de la base de datos
 $base_datos = "PQRS"; // Cambia esto con el nombre de tu base de datos
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
-require 'phpmailer/src/PHPmailer.php';
-require 'phpmailer/src/SMTP.php';
-require 'phpmailer/src/Exception.php';
-//Conectar para enviar correo
-$mail = new PHPMailer(true);
 // Conectar a la base de datos
 $conexion = new mysqli($host, $usuario, $contrasena, $base_datos);
 
@@ -37,10 +28,9 @@ if ($conexion->query($sql) === TRUE) {
     $sqlUsuario = "INSERT INTO Usuario (Numero_orden, Nombre, Correo) VALUES ('$ultimoId', '$nombre', '$correo')";
 
     if ($conexion->query($sqlUsuario) === TRUE) {
-        
-        
-        // Redirigir al usuario a la página de inicio
-        header("Location: index.html");
+        // Redirigir al usuario a la página anterior (la que contiene el formulario)
+        $previousPage = $_SERVER['HTTP_REFERER'];
+        header("Location: $previousPage");
         exit(); // Asegurarse de que no se ejecute más código después de la redirección
     } else {
         echo "Error al insertar datos de usuario: " . $conexion->error;
@@ -52,5 +42,4 @@ if ($conexion->query($sql) === TRUE) {
 // Cerrar la conexión
 $conexion->close();
 ?>
-
 
