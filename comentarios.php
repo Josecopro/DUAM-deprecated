@@ -19,7 +19,7 @@ $comentario = $_POST['comentario'];
 
 // Preparar la consulta SQL para insertar los datos en la tabla "Peticiones"
 $sql = "INSERT INTO Peticiones (comentario) VALUES ('$comentario')";
-
+$previousPage = $_SERVER['HTTP_REFERER'];
 if ($conexion->query($sql) === TRUE) {
     // La inserción se realizó con éxito, ahora obtendremos el ID del último registro insertado
     $ultimoId = $conexion->insert_id;
@@ -29,7 +29,6 @@ if ($conexion->query($sql) === TRUE) {
 
     if ($conexion->query($sqlUsuario) === TRUE) {
         // Redirigir al usuario a la página anterior (la que contiene el formulario)
-        $previousPage = $_SERVER['HTTP_REFERER'];
         header("Location: $previousPage");
         exit(); // Asegurarse de que no se ejecute más código después de la redirección
     } else {
