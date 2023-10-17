@@ -7,18 +7,21 @@
   <title>DUAM - Directorio de Universidades del Área Metropolitana</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  <!-- DUAM CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- DUAM CSS -->
   <link rel="stylesheet" href="estilos/style.css">
-  <link rel="icon" type="image/x-icon" href="GPT_Lo_Hace/DUAMLOGO-removebg.png">
-    <link rel="stylesheet" href="estilos/universidades.css">
+  <link rel="stylesheet" href="estilos/universidades.css">
+  <link rel="icon" type="image/x-icon" href="GPT_Lo_Hace/DUAM_LOGO.svg  ">
+  
+  
 </head>
-<body onload="cargarEstadoModoOscuro()" onload="colordeletrasdelheader()">
-
+<body onload="cargarEstadoModoOscuro()" onload="colordeletrasdelheader()" onload="cambiarNombresEtiquetas()">
   <!-- Barra de Navegacion -->
   <div class="Navegador">
     <nav class="navbar navbar-expand-lg  colornavegador">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="GPT_Lo_Hace/DUAM_LOGO_blanco.svg" id="logo" class="logo" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="GPT_Lo_Hace/DUAM_LOGO_negro.svg" id="logo"  class="logo" alt=""></a>
         <button class="navbar-toggler  nav-tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,6 +43,7 @@
               <button class="btn btn dropdown-toggle cambiacolor drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Carreras
               </button>
+            
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item secciondrop" href="carreras.html">Pregrados</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -55,114 +59,108 @@
             <input type="text" class="cambiacolor" placeholder="Escriba aquí" id="search">
             <button class="btn cambiacolor" id="search_icon">Presiona aquí para buscar</button>
             <div class="search_bx2" style="background-color: rgb(77, 77, 77); width: 300px;">
-                <!-- <a href="linkdelauni">
-                    
-                    <div class="contentido">
-                        <h6>Nombre de la uni</h6>
-                        <p>ubicación</p>
-                    </div>
-                </a> -->
             </div>
          </div>
-        </div>
       </div>
     </nav>
   </div>
-<!-- Contenedor PQRS-->
-<div class="ayuda" >
-  <button id="mostrarOcultarFormulario">
-    <h4 class="ayuda_logo"><i class="bi bi-box-arrow-in-left"></i></h4>
-    <h4>ayuda</h4>
-  </button>
-</div>  
-<div class="formularioPQRS">
-  <span id="formularioPQRS">
-    <form action="comentarios.php" method="post" id="pqrsForm">
-
-      <div class="container" >
-        <div class="row">
-          <div class="col-25">
-            <label for="correo">Nombre </label>
+  <div style="height: 70px;"></div>
+    <!-- Contenedor PQRS-->
+  <div class="ayuda" >
+    <button id="mostrarOcultarFormulario">
+      <h4 class="ayuda_logo"><i class="bi bi-box-arrow-in-right"></i></h4>
+      <h4>ayuda</h4>
+    </button>
+  </div>  
+  <div class="formularioPQRS">
+    <span id="formularioPQRS">
+      <form action="comentarios.php" method="post" id="pqrsForm">
+  
+        <div class="container" >
+          <div class="row">
+            <div class="col-25">
+              <label for="correo">Nombre </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+            </div>
           </div>
-          <div class="col-75">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+          <div class="row">
+            <div class="col-25">
+              <label for="correo">Correo electronico</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="correo" name="correo" placeholder="abcd@correo.com" required>
+            </div>
           </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="comentario">comentario</label >
+            </div>
+            <div class="col-75">
+              <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario..." style="height:200px" required  ></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Enviar PQRS">
+          </div>
+          </form>
         </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="correo">Correo electronico</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="correo" name="correo" placeholder="abcd@correo.com" required>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="comentario">comentario</label >
-          </div>
-          <div class="col-75">
-            <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario..." style="height:200px" required  ></textarea>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <input type="submit" value="Enviar PQRS">
-        </div>
-        </form>
-      </div>
-    </form>
-  </span>
-</div>
-<!--Hero Section-->
+      </form>
+    </span>
+  </div>
+  <!-- Contenedor principal-->
+  
   <div class="container">
-      <h2><b class="Tiposdeuniversidades justify-content-center">Privadas en el Área Metropolitana</b></h2> 
-    <div class="row">
-      <div class="col-md-6 d-flex flex-column justify-content-center">
-        <button class="universidad-button" onclick="parent.open('https://www.universidadean.edu.co/')">Universidad EAN</button>
-        <button class="universidad-button" onclick="parent.open('https://www.uan.edu.co/')">Universidad Antonio Nariño</button>
-        <button class="universidad-button" onclick="parent.open('https://www.areandina.edu.co/')">Fundación Universitaria Del Area Andina</button>
-        <button class="universidad-button" onclick="parent.open('https://www.unipiloto.edu.co/')">Corporación Universitaria Piloto De Colombia</button>
-        <button class="universidad-button" onclick="parent.open('https://www.ceipa.edu.co/')">Fundación Universitaria Ceipa</button>
-        <button class="universidad-button" onclick="parent.open('https://www.unad.edu.co/')">Universidad Nacional Abierta y a Distancia</button>
-        <button class="universidad-button" onclick="parent.open('https://www.unaula.edu.co/')">Universidad Autónoma Latinoamericana</button>
-      </div>
-      <div class="col-md-6 d-flex flex-column justify-content-center">
-        <button class="universidad-button" onclick="parent.open('https://www.eafit.edu.co/')">Universidad EAFIT</button>
-        <button class="universidad-button" onclick="parent.open('https://www.udem.edu.co/')">Universidad de Medellín</button>
-        <button class="universidad-button" onclick="parent.open('https://www.ces.edu.co/')">Universidad CES</button>
-        <button class="universidad-button" onclick="parent.open('https://www.eia.edu.co/')">Universidad EIA</button>
-        <button class="universidad-button" onclick="parent.open('https://www.upb.edu.co/')">Universidad Pontificia Bolivariana</button>
-        <button class="universidad-button" onclick="parent.open('https://www.usbmed.edu.co/')">Universidad San Buenaventura</button>
-      </div>  
+    <h2><b class="Tiposdeuniversidades justify-content-center">Privadas en el Área Metropolitana</b></h2> 
+  <div class="row">
+    <div class="col-md-6 d-flex flex-column justify-content-center">
+      <button class="universidad-button" onclick="parent.open('https://www.universidadean.edu.co/')">Universidad EAN</button>
+      <button class="universidad-button" onclick="parent.open('https://www.uan.edu.co/')">Universidad Antonio Nariño</button>
+      <button class="universidad-button" onclick="parent.open('https://www.areandina.edu.co/')">Fundación Universitaria Del Area Andina</button>
+      <button class="universidad-button" onclick="parent.open('https://www.unipiloto.edu.co/')">Corporación Universitaria Piloto De Colombia</button>
+      <button class="universidad-button" onclick="parent.open('https://www.ceipa.edu.co/')">Fundación Universitaria Ceipa</button>
+      <button class="universidad-button" onclick="parent.open('https://www.unad.edu.co/')">Universidad Nacional Abierta y a Distancia</button>
+      <button class="universidad-button" onclick="parent.open('https://www.unaula.edu.co/')">Universidad Autónoma Latinoamericana</button>
     </div>
+    <div class="col-md-6 d-flex flex-column justify-content-center">
+      <button class="universidad-button" onclick="parent.open('https://www.eafit.edu.co/')">Universidad EAFIT</button>
+      <button class="universidad-button" onclick="parent.open('https://www.udem.edu.co/')">Universidad de Medellín</button>
+      <button class="universidad-button" onclick="parent.open('https://www.ces.edu.co/')">Universidad CES</button>
+      <button class="universidad-button" onclick="parent.open('https://www.eia.edu.co/')">Universidad EIA</button>
+      <button class="universidad-button" onclick="parent.open('https://www.upb.edu.co/')">Universidad Pontificia Bolivariana</button>
+      <button class="universidad-button" onclick="parent.open('https://www.usbmed.edu.co/')">Universidad San Buenaventura</button>
+    </div>  
+  </div>
 
-    <h2><b class="Tiposdeuniversidades">Universidades Oficiales en el Área Metropolitana</b></h2>
+  <h2><b class="Tiposdeuniversidades">Universidades Oficiales en el Área Metropolitana</b></h2>
 <div class="row">
-  <div class="col-md-6 d-flex flex-column justify-content-md-center">
-    <button class="universidad-button" onclick="parent.open('https://unal.edu.co/')">Universidad Nacional</button>
-    <button class="universidad-button" onclick="parent.open('https://www.udea.edu.co/')">Universidad de Antioquia</button>
-    <button class="universidad-button" onclick="parent.open('https://www.itm.edu.co/')">Instituto Tecnológico Metropolitano - ITM</button>
-    <button class="universidad-button" onclick="parent.open('https://www.tdea.edu.co/')">Tecnológico de Antioquia</button>
-  </div>
-  <div class="col-md-6 d-flex flex-column justify-content-md-center">
-    <button class="universidad-button" onclick="parent.open('https://www.colmayor.edu.co/')">Colegio Mayor De Antioquia</button>
-    <button class="universidad-button" onclick="parent.open('https://www.iue.edu.co/')">Institución Universitaria De Envigado</button>
-    <button class="universidad-button" onclick="parent.open('https://www.pascualbravo.edu.co/')">Institución Universitaria Pascual Bravo</button>
-    <button class="universidad-button" onclick="parent.open('https://www.politecnicojic.edu.co/')">Politécnico Colombiano Jaime Isaza Cadavid</button>
-  </div>
+<div class="col-md-6 d-flex flex-column justify-content-md-center">
+  <button class="universidad-button" onclick="parent.open('https://unal.edu.co/')">Universidad Nacional</button>
+  <button class="universidad-button" onclick="parent.open('https://www.udea.edu.co/')">Universidad de Antioquia</button>
+  <button class="universidad-button" onclick="parent.open('https://www.itm.edu.co/')">Instituto Tecnológico Metropolitano - ITM</button>
+  <button class="universidad-button" onclick="parent.open('https://www.tdea.edu.co/')">Tecnológico de Antioquia</button>
 </div>
-  </div>
-  <!--Contenedor PopUp-->
+<div class="col-md-6 d-flex flex-column justify-content-md-center">
+  <button class="universidad-button" onclick="parent.open('https://www.colmayor.edu.co/')">Colegio Mayor De Antioquia</button>
+  <button class="universidad-button" onclick="parent.open('https://www.iue.edu.co/')">Institución Universitaria De Envigado</button>
+  <button class="universidad-button" onclick="parent.open('https://www.pascualbravo.edu.co/')">Institución Universitaria Pascual Bravo</button>
+  <button class="universidad-button" onclick="parent.open('https://www.politecnicojic.edu.co/')">Politécnico Colombiano Jaime Isaza Cadavid</button>
+</div>
+</div>
+</div>
+    <!-- Contenedor Popup-->
   <div id="popup" class="popup">
     <div class="popup-content">
         <p>¡La solicitud ha sido enviada <br>a su correo electronico!</p>
     </div>
-  </div>
-  <button id="dark-mode-toggle" class="btn">Modo Oscuro</button>
-  </body>
-  <footer>Todos los derechos reservados &copy 2023</footer>
+</div>
+  
+  <button id="dark-mode-toggle" class="btn btn-primary dark">Modo Oscuro</button>
   <script src="darkmode.js"></script>
   <script src="botonayuda.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script src="bugfixes(imp).js"></script>
+</body>
+<footer>Todos los derechos reservados &copy 2023</footer>
 </html>
