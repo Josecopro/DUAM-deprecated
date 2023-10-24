@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             // Envía el formulario después del retraso
             pqrsForm.submit();
-        }, 3000); // 3000 milisegundos (3 segundos) de retraso antes de enviar el formulario
+        }, 2500); // 2500 milisegundos (2.5 segundos) de retraso antes de enviar el formulario
     });
 });
