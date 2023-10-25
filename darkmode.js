@@ -161,6 +161,10 @@ function alternarModo() {
   // Alternar el color de fondo de la barra de navegación en función del estado del modo oscuro
   navbar.classList.toggle('bg-dark');
   
+   // Alternar la clase CSS para el modo oscuro en la tabla
+   const tablaPQRS = document.querySelector('.pqrs-table');
+   tablaPQRS.classList.toggle('modo-oscuro');
+  
   // Guardar el estado del modo oscuro en el almacenamiento local
   guardarEstadoModoOscuro(enModoOscuro.toString());
 }

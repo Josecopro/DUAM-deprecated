@@ -1,13 +1,27 @@
 /* Google font "Poppins" */
 /**seccion buscador */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --azuloscuroDUAM: #004AAD;
+  --aguamarinaDUAM: #35C19C;
+  --amarilloDUAM: #EDD140;
+  --grisclaroDUAM: #B2B7B2;
+  --grisoscuroDUAM: #404040;
+  --bodyDUAM:#ebe5e5;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: var(--grisoscuroDUAM);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+  background: var(--bodyDUAM);
+}
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
-
-
 .search {
     position: relative;
     display: flex;
@@ -111,21 +125,6 @@
 
 /**fin buscador**/
 
-
-:root {
-    --azuloscuroDUAM: #004AAD;
-    --aguamarinaDUAM: #35C19C;
-    --amarilloDUAM: #EDD140;
-    --grisclaroDUAM: #B2B7B2;
-    --grisoscuroDUAM: #404040;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    color: var(--grisoscuroDUAM);
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s ease;
-  }
   
   header {
     background-color: var(--azuloscuroDUAM);

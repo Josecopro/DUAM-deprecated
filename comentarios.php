@@ -1,8 +1,8 @@
 <?php
-$host = "localhost"; // Cambia esto con la información de tu servidor de base de datos
-$usuario = "root"; // Cambia esto con tu nombre de usuario de la base de datos
-$contrasena = ""; // Cambia esto con tu contraseña de la base de datos
-$base_datos = "PQRS"; // Cambia esto con el nombre de tu base de datos
+$host = "localhost"; 
+$usuario = "root"; 
+$contrasena = ""; 
+$base_datos = "PQRS";
 
 // Conectar a la base de datos
 $conexion = new mysqli($host, $usuario, $contrasena, $base_datos);
