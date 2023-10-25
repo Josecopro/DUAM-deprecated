@@ -7,10 +7,6 @@ $base_datos = "PQRS";
 // Conectar a la base de datos
 $conexion = new mysqli($host, $usuario, $contrasena, $base_datos);
 
-// Verificar la conexión
-if ($conexion->connect_error) {
-    die("Error en la conexión: " . $conexion->connect_error);
-}
 
 // Consulta SQL para obtener los datos de la tabla Usuario y Peticiones
 $sql = "SELECT Usuario.Nombre, Usuario.Correo, Peticiones.Comentario
@@ -115,6 +111,10 @@ $resultado = $conexion->query($sql);
         } else {
             echo "<tr><td colspan='3'>No se encontraron registros.</td></tr>";
         }
+        // Verificar la conexión
+      if ($conexion->connect_error) {
+        die("Error en la conexión: " . $conexion->connect_error);
+      }
 
         // Cerrar la conexión
         $conexion->close();

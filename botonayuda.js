@@ -32,5 +32,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Importante.html
+let tabs = document.querySelector(".tabs");
+let tabHeader = tabs.querySelector(".tab-header");
+let tabHeaderElements = tabs.querySelectorAll(".tab-header > div");
+let tabBody = tabs.querySelector(".tab-body");
+let tabBodyElements = tabs.querySelectorAll(".tab-body > div");
+let tabIndicator = tabs.querySelector(".tab-indicator > div");
+
+for(let i=0;i<tabHeaderElements.length;i++){
+  tabHeaderElements[i].addEventListener("click",function(){
+    tabHeader.querySelector(".active").classList.remove("active");
+    tabHeaderElements[i].classList.add("active");
+    tabBody.querySelector(".active").classList.remove("active");
+    tabBodyElements[i].classList.add("active");
+    tabIndicator.style.left = `${i*25}%`;
+  });
+}
 
 let piripiri = "https://music.youtube.com/watch?v=VyZiIuMufTA&si=ZSR3cbFJoIa3addk"

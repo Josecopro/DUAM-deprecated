@@ -4,7 +4,7 @@
 @import url('https://fonts.cdnfonts.com/css/desigers');
 
 :root {
-  --azuloscuroDUAM: #004AAD;
+  --azuloscuroDUAM: #1a5eb6;
   --aguamarinaDUAM: #35C19C;
   --amarilloDUAM: #EDD140;
   --grisclaroDUAM: #B2B7B2;
@@ -298,7 +298,7 @@ body {
   @media (max-width: 768px) {
     .separadordetarjetas{
       display: none;
-      background-color: #EDD140;
+      background-color: var(--amarilloDUAM);
     }
   }
   
@@ -348,7 +348,7 @@ body {
     display: grid;
     align-items: end;
     font-family: sans-serif;
-    font-size: 2.3rem;
+    font-size: 4.3rem;
     font-weight: bold;
     color: #0000;
     padding: .75rem;
@@ -467,7 +467,7 @@ body {
 }
 .queso{
   font-size: 20px;
-  background-color: #35C19C;
+  background-color: var(--aguamarinaDUAM);
   color: black;
   font-family: Poppins;
   margin:30px;
@@ -802,6 +802,8 @@ transition: 0.6s;
   margin: 2%;
 }
 /* Admin.php styles */
+
+
 .pqrs-table {
   width: 100%;
   border-collapse: collapse;
@@ -829,18 +831,84 @@ transition: 0.6s;
 .pqrs-table tr:nth-child(odd) {
   background-color: #ffffff;
 }
-/* Agrega un estilo de fondo oscuro */
-.modo-oscuro .pqrs-table {
-  background-color: #333;
-  color: white;
+
+/* Importante.html styles */
+.tabs {
+  position:relative;
+  width:100%;
+}
+.tabs .title {
+  padding:50px 20px 100px;
+  text-align:center;
+  font-size:30px;
+  color:#fff;
+  background: var(--azuloscuroDUAM);
+  font-weight: bold;
+}
+.tabs .tab-header,
+.tabs .tab-indicator,
+.tabs .tab-body {
+  margin:0 auto;
+  max-width:700px;
+  width:100%;
+}
+.tabs .tab-header {
+  position:relative;
+  width:100%;
+  display:flex;
+  align-items:center;
+  height:60px;
+  margin-top:-60px;
+  z-index:2;
+}
+.tabs .tab-header > div {
+  width:25%;
+  text-align:center;
+  padding:15px 0px;
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
+  transition:color 300ms ease-in-out;
+  font-weight: bold;
+}
+.tabs .tab-header > div.active {
+  color: var(--azuloscuroDUAM);
+  font-weight: bolder;
+}
+.tabs .tab-indicator {
+  position:relative;
+  height:60px;
+  margin-top:-60px;
+}
+.tabs .tab-indicator > div {
+  position:absolute;
+  left: 0%;
+  width:25%;
+  height:100%;
+  background:#fff;
+  border-radius:10px 10px 0px 0px;
+  transition:all 300ms ease-in-out;
+}
+.tabs .tab-body {
+  position:relative;
+}
+.tabs .tab-body > div {
+  position:absolute;
+  width:100%;
+  padding:20px;
+  opacity:0;
+  top:-100vh;
+}
+.tabs .tab-body > div > * {
+  margin:10px 0px;
+}
+.tabs .tab-body > div > p {
+  font-size: 1.1rem;
+}
+.tabs .tab-body > div.active {
+  top:0px;
+  opacity:1;
+  transition:top 0ms ease-in-out 0ms,
+             opacity 500ms ease-in-out 0ms;    
 }
 
-/* Estilo para las filas pares en modo oscuro */
-.modo-oscuro .pqrs-table tr:nth-child(even) {
-  background-color: #555;
-}
-
-/* Estilo para las filas impares en modo oscuro */
-.modo-oscuro .pqrs-table tr:nth-child(odd) {
-  background-color: #444;
-}
