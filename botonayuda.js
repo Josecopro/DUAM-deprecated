@@ -31,3 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2500); // 2500 milisegundos (2.5 segundos) de retraso antes de enviar el formulario
     });
 });
+
+
+let piripiri = "https://music.youtube.com/watch?v=VyZiIuMufTA&si=ZSR3cbFJoIa3addk"
