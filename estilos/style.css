@@ -13,7 +13,7 @@
 }
 body {
   font-family: Arial, sans-serif;
-  color: var(--grisoscuroDUAM);
+  color: black;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s ease;
@@ -808,6 +808,7 @@ transition: 0.6s;
   width: 100%;
   border-collapse: collapse;
   position: relative;
+  border: 2px solid #EDD140;
 }
 .pqrs-table th{
   font-size: 1.5rem;

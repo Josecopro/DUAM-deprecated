@@ -15,22 +15,6 @@ h2 {
   color: #000000;
   margin-bottom: 20px;
 }
-nav a {
-  color: var(--grisoscuroDUAM);
-  text-decoration: none;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-right: 20px;
-}
-
-nav a:hover {
-  background-color: var(--grisclaroDUAM);
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-
   .universidad-button {
     color:var(--grisoscuroDUAM);
     border: none;
@@ -42,6 +26,7 @@ nav a:hover {
 
   .universidad-button:hover {
     background-color: #35C19C;
+    transition: .5s;
   }
 
   .universidad-button:focus {
@@ -52,5 +37,9 @@ nav a:hover {
     color: white;
   }
 .Tiposdeuniversidades{
-  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+.Tiposdeuniversidades :only-child{
+  align-self: center;
 }

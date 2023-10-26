@@ -88,6 +88,10 @@ $resultado = $conexion->query($sql);
     <h1 class="display-1 text-center">Administrador comentarios</h1>
 </head>
 <body>
+  <form action="">
+
+  
+  </form>
     <h1>Registros PQRS</h1>
     <table class="pqrs-table">
         <tr>
