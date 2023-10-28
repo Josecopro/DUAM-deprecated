@@ -915,4 +915,47 @@ transition: 0.6s;
   transition:top 0ms ease-in-out 0ms,
              opacity 500ms ease-in-out 0ms;    
 }
-
+/*Carreras.html style*/
+.tarjeta-parent{
+  margin: 2%;
+  background: #fff;
+  width: 250px;
+  height: auto;
+  display: inline-block;
+  justify-content: center;
+  border-radius: 7px;
+  columns: 1;
+  border: 2px black solid;
+}
+.tarjeta-child{
+  align-self: center;
+}
+.tarjeta-child img{
+  padding: 20px;
+}
+.tarjeta-parent button{    
+  background: #fff;
+  color: #fff;
+  align-self: center;
+  border: none;
+  padding: 7px 20px;
+  margin-top: 15px;
+  margin-left: 4.25rem;
+}
+.tarjeta-parent:hover img {
+  transition: .6s;
+  transform: scale(1.1);
+}
+.tarjeta-parent:hover button{
+  transform: translateY(-10px);
+  transition: .6s; 
+  background: blue;
+  border: 2px black solid;
+  border-radius: 3px;
+}
+.tarjeta-parent h6{
+  color: black;
+  font-size: 1.4rem;
+  padding-left: 3.25rem;
+  font-weight: bold;
+}
