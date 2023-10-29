@@ -921,7 +921,7 @@ transition: 0.6s;
   justify-content: center;
   margin: 2%;
   background: var(--letterwhite);
-  width: 250px;
+  width: 19rem;
   height: auto;
   border-radius: 7px;
   columns: 1;
@@ -950,7 +950,7 @@ transition: 0.6s;
   background: var(--azuloscuroDUAM);
   border: 2px --letterblack solid;
   border-radius: 3px;
-  transform: translatex(55%);
+  transform: translatex(85%);
   margin-bottom: 10px;
 }
 .tarjeta-parent h6{

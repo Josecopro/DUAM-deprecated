@@ -20,7 +20,7 @@
   <div class="Navegador">
     <nav class="navbar navbar-expand-lg  colornavegador">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="GPT_Lo_Hace/DUAM_LOGO_negro.svg" id="logo"  class="logo" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="GPT_Lo_Hace/DUAM_LOGO_blanco.svg" id="logo" class="logo" alt=""></a>
         <button class="navbar-toggler  nav-tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,91 +34,38 @@
             </li>
             <li class="nav-item">
               <a class="nav-link nav-a" href="becas.html">Becas</a>
-              <li class="nav-item">
-              <a class="nav-link nav-a" href="nosotros.html">Nosotros</a>
-              </li>
             </li>
-            <div class="dropdown">
-              <button class="btn btn dropdown-toggle cambiacolor drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Carreras
-              </button>
-            
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item secciondrop" href="carreras.html">Pregrados</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item secciondrop" href="#">Especializaciones</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item secciondrop" href="#">Maestrías</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item secciondrop" href="#">Doctorados</a></li>
-              </ul>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link nav-a" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn dropdown-toggle cambiacolor drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Carreras
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item secciondrop" href="carreras.html">Pregrados</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item secciondrop" href="#">Especializaciones</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item secciondrop" href="#">Maestrías</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item secciondrop" href="#">Doctorados</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
           <div class="search">
             <input type="text" class="cambiacolor" placeholder="Escriba aquí" id="search">
-            <button class="btn cambiacolor" id="search_icon">Presiona aquí para buscar</button>
+            <button class="btn cambiacolor" id="search_icon">Presiona aquí para ir al buscador</button>
             <div class="search_bx2" style="background-color: rgb(77, 77, 77); width: 300px;">
             </div>
-         </div>
+          </div>
+        </div>
       </div>
     </nav>
   </div>
-  <div style="height: 70px;"></div>
-  <!-- Hero section -->
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="display-4"><b>Bienvenidos a DUAM</b></h1>
-      <p class="lead cambiacolor">El Directorio de Universidades del Área Metropolitana</p>
-      <hr class="my-4">
-      <p class="cambiacolor">Encuentra información sobre universidades, carreras, precios, becas y más.</p>
-      <a class="btn btn-primary btn-lg" href="importante.html" role="button">Ver más</a>
-    </div>
-  </section>
-    <!-- Contenedor PQRS-->
-  <div class="ayuda" >
-    <button id="mostrarOcultarFormulario">
-      <h4 class="ayuda_logo"><i class="bi bi-box-arrow-in-right"></i></h4>
-      <h4>ayuda</h4>
-    </button>
-  </div>  
-  <div class="formularioPQRS">
-    <span id="formularioPQRS">
-      <form action="comentarios.php" method="post" id="pqrsForm">
   
-        <div class="container" >
-          <div class="row">
-            <div class="col-25">
-              <label for="correo">Nombre </label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="correo">Correo electronico</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="correo" name="correo" placeholder="abcd@correo.com" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="comentario">comentario</label >
-            </div>
-            <div class="col-75">
-              <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario..." style="height:200px" required  ></textarea>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <input type="submit" value="Enviar PQRS">
-          </div>
-          </form>
-        </div>
-      </form>
-    </span>
-  </div>
   <!-- Contenedor principal-->
   
   <section class="container">
