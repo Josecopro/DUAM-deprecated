@@ -65,6 +65,62 @@
       </div>
     </nav>
   </div>
+  <div style="height: 70px;"></div>
+  <!-- Hero section -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-4"><b>Bienvenidos a DUAM</b></h1>
+      <p class="lead cambiacolor">El Directorio de Universidades del Área Metropolitana</p>
+      <hr class="my-4">
+      <p class="cambiacolor">Encuentra información sobre universidades, carreras, precios, becas y más.</p>
+      <a class="btn btn-primary btn-lg" href="importante.html" role="button">Ver más</a>
+    </div>
+  </section>
+    <!-- Contenedor PQRS-->
+  <div class="ayuda" >
+    <button id="mostrarOcultarFormulario">
+      <h4 class="ayuda_logo"><i class="bi bi-box-arrow-in-right"></i></h4>
+      <h4>ayuda</h4>
+    </button>
+  </div>  
+  <div class="formularioPQRS">
+    <span id="formularioPQRS">
+      <form action="comentarios.php" method="post" id="pqrsForm">
+  
+        <div class="container" >
+          <div class="row">
+            <div class="col-25">
+              <label for="correo">Nombre </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="correo">Correo electronico</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="correo" name="correo" placeholder="abcd@correo.com" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="comentario">comentario</label >
+            </div>
+            <div class="col-75">
+              <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario..." style="height:200px" required  ></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Enviar PQRS">
+          </div>
+          </form>
+        </div>
+      </form>
+    </span>
+  </div>
   
   <!-- Contenedor principal-->
   
@@ -85,7 +141,7 @@
     <div class="con1principalDUAM">
       <div class="row">
         <div class="col-md-6 d-flex flex-column justify-content-center">
-          <img src="https://i.imgur.com/cIctT2B.jpg" class="img-fluid rounded" alt="quesito">
+        <img src="https://i.imgur.com/cIctT2B.jpg" class="img-fluid rounded" alt="quesito">
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center">
           <p class="con1principalp">DUAM se ha desarrollado para ser un punto de referencia integral para aquellos que buscan orientación sobre opciones educativas en el área metropolitana de Antioquia. Ya no es necesario saltar de un sitio web a otro o pasar por múltiples folletos; DUAM centraliza toda la información esencial, desde detalles sobre cada universidad hasta los programas académicos que ofrecen, proporcionando un panorama completo y claro para los usuarios.
