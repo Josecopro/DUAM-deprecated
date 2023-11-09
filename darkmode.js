@@ -35,7 +35,7 @@ const DUAMBASEDEDATOS = [{
         },
         {
           img: "si vamos a poner imagenes en el buscador aquí iran",
-          title: "Ingenerias",
+          title: "Ingenierias",
           descripcion:"si vamos a realizar una descripcion: pequeña descripción",
           url: "carreras.divisiones/ingenierias.html",
         },
@@ -43,7 +43,7 @@ const DUAMBASEDEDATOS = [{
           img: "si vamos a poner imagenes en el buscador aquí iran",
           title: "Salud",
           descripcion:"si vamos a realizar una descripcion: pequeña descripción",
-          url: "carreras.divisiones/salud",
+          url: "carreras.divisiones/salud.html",
         },
         {
           img: "si vamos a poner imagenes en el buscador aquí iran",
@@ -80,7 +80,20 @@ const DUAMBASEDEDATOS = [{
           img: "https://svgshare.com/i/xq_.svg",
           title: "Ingeniería mecanica",
           descripcion:"Aqui encontraras las carreras",
-          url: "carreras.divisiones/Ingenieriassubdivisiones/ingeneriamecanica.html",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingmecanica.html",
+        },
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Arquitectura",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/arquitectura.html",
+        },
+        //ingdeprocesos.html
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Ingeniería de procesos",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingdeprocesos.html",
         },
         //fin ingenieria subdivisiones
         {
