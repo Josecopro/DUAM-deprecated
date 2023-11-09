@@ -74,7 +74,7 @@ const DUAMBASEDEDATOS = [{
           img: "https://svgshare.com/i/xq_.svg",
           title: "Ingeniería civil",
           descripcion:"Aqui encontraras las carreras",
-          url: "carreras.divisiones/Ingenieriassubdivisiones/ingenieriacivil.html",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingcivil.html",
         },
         {
           img: "https://svgshare.com/i/xq_.svg",
@@ -95,12 +95,45 @@ const DUAMBASEDEDATOS = [{
           descripcion:"Aqui encontraras las carreras",
           url: "carreras.divisiones/Ingenieriassubdivisiones/ingdeprocesos.html",
         },
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Ingeniería de producción",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingdeproduccion.html",
+        },
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Ingeniería de sistemas",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingdesistemas.html",
+        },
+        //ingagronomica.html
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Ingeniería agronomica",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingagronomica.html",
+        },
+        //ingmatematica.html
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Ingeniería matemática",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingmatematica.html",
+        },
+        //ingfisica.html
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Ingeniería fisica",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingfisica.html",
+        },
         //fin ingenieria subdivisiones
         {
           img: "https://svgshare.com/i/xq_.svg",
           title: "Administración de negocios",
           descripcion:"Aqui encontraras las carreras",
-          url: "carreras.divisiones/cienciassocialessubdivisiones/administraciondenegocios.html",
+          url: "carreras.divisiones/cienciassocialessubdivisiones/admindenegocios.html",
         },
         {
         img: "si vamos a poner imagenes en el buscador aquí iran",
@@ -114,6 +147,37 @@ const DUAMBASEDEDATOS = [{
           descripcion:"debemos administrar la pagina, que loco",
           url: "admin.php",
           },
+        //subdivisiones humanidades:
+        {
+          img: "si vamos a poner imagenes en el buscador aquí iran",
+          title: "Arte dramatico",
+          descripcion:"debemos administrar la pagina, que loco",
+          url: "carreras.divisiones/humanidadessubdivisiones/artedramatico.html",
+          },
+          {
+            img: "si vamos a poner imagenes en el buscador aquí iran",
+            title: "Artes plasticas",
+            descripcion:"debemos administrar la pagina, que loco",
+            url: "carreras.divisiones/humanidadessubdivisiones/artesplasticas.html",
+            },
+          {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Cine",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/humanidadessubdivisiones/cine.html",
+          },
+          {
+            img: "si vamos a poner imagenes en el buscador aquí iran",
+            title: "Comunicación",
+            descripcion:"debemos administrar la pagina, que loco",
+            url: "carreras.divisiones/humanidadessubdivisiones/comunicacion.html",
+        },
+        {
+          img: "si vamos a poner imagenes en el buscador aquí iran",
+          title: "Comunicación",
+          descripcion:"debemos administrar la pagina, que loco",
+          url: "carreras.divisiones/humanidadessubdivisiones/comunicacion.html",
+      },
           //subdivisiones salud:
           {
             img: "si vamos a poner imagenes en el buscador aquí iran",
