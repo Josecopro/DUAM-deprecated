@@ -212,17 +212,17 @@ document.addEventListener("DOMContentLoaded", function() {
   // Verificar si hay una cookie para el modo oscuro
   const darkModeCookie = getCookie("darkMode");
   if (darkModeCookie) {
-    darkModeImage.src = darkModeCookie === "modooscuro1" ? "GPT_Lo_Hace/modooscuro1.svg" : "GPT_Lo_Hace/modooscuro2.svg";
+    darkModeImage.src = darkModeCookie === "modooscuro1" ? "https://svgshare.com/i/zTq.svg" : "https://svgshare.com/i/zWF.svg";
   }
 
   // Agregar evento de clic al botón
   darkModeToggle.addEventListener("click", function() {
     // Cambiar la imagen y guardar el estado en la cookie
-    if (darkModeImage.src.endsWith("modooscuro1.svg")) {
-      darkModeImage.src = "GPT_Lo_Hace/modooscuro2.svg";
+    if (darkModeImage.src.endsWith("/i/zTq.svg")) {
+      darkModeImage.src = "https://svgshare.com/i/zWF.svg";
       setCookie("darkMode", "modooscuro2", 7);
     } else {
-      darkModeImage.src = "GPT_Lo_Hace/modooscuro1.svg";
+      darkModeImage.src = "https://svgshare.com/i/zTq.svg";
       setCookie("darkMode", "modooscuro1", 7);
     }
   });
