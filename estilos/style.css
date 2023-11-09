@@ -13,6 +13,7 @@
   --letterblack: #000;
   --letterwhite: #f1f1f1;
   --piripiri: #f2a3b3;
+  --blackbodyDUAM : #212529;
 }
 body {
   font-family: Arial, sans-serif;
@@ -935,11 +936,32 @@ transition: 0.6s;
   transform: translatex(85%);
   margin-bottom: 10px;
 }
+.bg-dark .tarjeta-parent{
+  border: 2px black solid;
+  background: var(--grisoscuroDUAM);
+}
+.bg-dark .tarjeta-parent button{
+  background: var(--grisoscuroDUAM);
+  color: var(--grisoscuroDUAM);
+}
+.bg-dark .tarjeta-parent:hover button{
+  transition: .6s; 
+  background: var(--azuloscuroDUAM);
+  color: var(--letterwhite);
+  border: 2px --letterblack solid;
+  border-radius: 3px;
+  transform: translatex(85%);
+  margin-bottom: 10px;
+}
+
 .tarjeta-parent h6{
   color: var(--letterblack);
-  font-size: 1.04rem;
+  font-size: 1.09rem;
   text-align: center;
   font-weight: bold;
+}
+.bg-dark .tarjeta-parent h6{
+  color: var(--letterwhite);
 }
 /*Becas.html julian sos una basura morite */
 .becas-slider{
