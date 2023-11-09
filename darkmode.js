@@ -101,6 +101,31 @@ const DUAMBASEDEDATOS = [{
           descripcion:"debemos administrar la pagina, que loco",
           url: "admin.php",
           },
+          //subdivisiones salud:
+          {
+            img: "si vamos a poner imagenes en el buscador aquí iran",
+            title: "Administración ambiental",
+            descripcion:"debemos administrar la pagina, que loco",
+            url: "carreras.divisiones/saludsubdivisiones/adminambientalysanitaria.html",
+            },
+             {
+            img: "si vamos a poner imagenes en el buscador aquí iran",
+            title: "Fisioterapia",
+            descripcion:"debemos administrar la pagina, que loco",
+            url: "carreras.divisiones/saludsubdivisiones/fisioterapia.html",
+            },
+            {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Microbilogia",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/saludsubdivisiones/microbiologiaindustrialyambiental.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Medicina",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/saludsubdivisiones/medicina.html",
+             },
     ]
 
 let search_bx2 = document.getElementsByClassName('search_bx2')[0];
@@ -193,6 +218,67 @@ function cargarEstadoModoOscuro() {
     document.body.classList.add('text-white');
     document.querySelector('.navbar').classList.add('bg-dark');
   }
+
+  const enlaces = document.querySelectorAll('.nav-link');
+  const colorletra= document.querySelectorAll('.Tiposdeuniversidades')
+  const colorletralogo= document.querySelectorAll('.navbar-brand')
+  const palabracambiante= document.querySelectorAll('.cambiacolor')
+  const navbar = document.querySelector('.navbar');
+  const logo = document.getElementById('logo');
+  const logo2= document.getElementById('logo2');
+  const espacioancladoaJS= document.getElementById('fondo_de_cuadros_JS');
+  palabracambiante.forEach((enlace) => {
+    if (estadoModoOscuro==='false') {
+      enlace.classList.remove('text-white');
+      enlace.classList.add('text-dark');
+    } else if ((estadoModoOscuro==='true')){
+      enlace.classList.remove('text-dark');
+      enlace.classList.add('text-white');
+    }
+  });
+  enlaces.forEach((enlace) => {
+    if (estadoModoOscuro==='false') {
+      enlace.classList.remove('text-white');
+      enlace.classList.add('text-dark');
+    } else if ((estadoModoOscuro==='true')){
+      enlace.classList.remove('text-dark');
+      enlace.classList.add('text-white');
+    }
+  });
+  colorletra.forEach((enlace) => {
+    if (estadoModoOscuro==='false') {
+      enlace.classList.remove('text-white');
+      enlace.classList.add('text-dark');
+    } else if ((estadoModoOscuro==='true')){
+      enlace.classList.remove('text-dark');
+      enlace.classList.add('text-white');
+    }
+  })
+  colorletralogo.forEach((enlace) => {
+    if (estadoModoOscuro==='false') {
+      enlace.classList.remove('text-white');
+      enlace.classList.add('text-dark');
+    } else if ((estadoModoOscuro==='true')){
+      enlace.classList.remove('text-dark');
+      enlace.classList.add('text-white');
+    }
+  })
+
+  if (estadoModoOscuro==='true') {
+    logo.src = 'https://svgshare.com/i/xr0.svg';
+    logo2.src = 'https://svgshare.com/i/xr0.svg';
+  } else {
+    logo.src = 'https://svgshare.com/i/xqa.svg';
+    logo2.src = 'https://svgshare.com/i/xqa.svg';
+  }
+  if(estadoModoOscuro==='true'){
+    espacioancladoaJS.classList.remove('bg-light');
+    espacioancladoaJS.classList.add('bg-dark');
+  }else{
+    espacioancladoaJS.classList.remove('bg-dark');
+    espacioancladoaJS.classList.add('bg-light');
+  }
+
 }
 
 // Obtener el botón de alternar modo oscuro desde el DOM
