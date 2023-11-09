@@ -13,6 +13,7 @@
   --letterblack: #000;
   --letterwhite: #f1f1f1;
   --piripiri: #f2a3b3;
+  --blackbodyDUAM : #212529;
 }
 body {
   font-family: Arial, sans-serif;
@@ -420,13 +421,7 @@ body {
   .decoracionslide{
     background-color: var(--grisclaroDUAM);
   }
-  .tituloscarreras{
-    font-size: 3rem;
-  }
-  
-  .botonesdecarreras{
-    background-color:var(--grisclaroDUAM);
-  }
+
   /**  INICIO CSS PREGRADOS DESCRIPCION  **/
 .titulo_descripcion_pregrados{
   margin-top: 20px;
@@ -608,9 +603,7 @@ body {
   
   
   /* javascript classes end  */
-.ingptext{
-  margin: 4%;
-  }
+
 
 /* Formulario PQRS y boton Ayuda*/
 .ayuda{
@@ -943,11 +936,32 @@ transition: 0.6s;
   transform: translatex(85%);
   margin-bottom: 10px;
 }
+.bg-dark .tarjeta-parent{
+  border: 2px black solid;
+  background: var(--grisoscuroDUAM);
+}
+.bg-dark .tarjeta-parent button{
+  background: var(--grisoscuroDUAM);
+  color: var(--grisoscuroDUAM);
+}
+.bg-dark .tarjeta-parent:hover button{
+  transition: .6s; 
+  background: var(--azuloscuroDUAM);
+  color: var(--letterwhite);
+  border: 2px --letterblack solid;
+  border-radius: 3px;
+  transform: translatex(85%);
+  margin-bottom: 10px;
+}
+
 .tarjeta-parent h6{
   color: var(--letterblack);
-  font-size: 1.04rem;
+  font-size: 1.09rem;
   text-align: center;
   font-weight: bold;
+}
+.bg-dark .tarjeta-parent h6{
+  color: var(--letterwhite);
 }
 /*Becas.html julian sos una basura morite */
 .becas-slider{
@@ -1271,3 +1285,32 @@ button.boton-dakrmode:hover{
   transition: .5s;
   transform: scale(1.2);
 }
+/*Ingenierias neceista ayuda y yo soy su salvacion*/
+.ingptext{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 4%;
+  font: x-large;
+  font-weight: 545;
+  }
+  .tituloscarreras{
+    color: var(--aguamarinaDUAM);
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  
+  .botonesdecarreras{
+    background-color:var(--grisclaroDUAM);
+    font-weight: bold;
+    padding: 21px 100px;
+    margin: .3rem;
+  }
+.botonesdecarreras:hover{
+  transform: scale(1.1);
+  color: var(--azuloscuroDUAM);
+  transition: .6s;
+  background: var(--bodyDUAM);
+}
+.bg-dark button.botonesdecarreras:hover{
+  background: #212529;
+  } 

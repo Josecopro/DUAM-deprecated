@@ -4,84 +4,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DUAM - Directorio de Universidades del &Aacute;rea Metropolitana</title>
+  <title>DUAM - Directorio de Universidades del Área Metropolitana</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- DUAM CSS -->
   <link rel="stylesheet" href="../estilos/style.css">
+  <link rel="icon" type="image/x-icon" href="GPT_Lo_Hace/DUAM_LOGO.svg  ">
+  
 </head>
-
-<body onload="cargarEstadoModoOscuro()" onload="colordeletrasdelheader()">
+<body onload="cargarEstadoModoOscuro()" onload="colordeletrasdelheader()" onload="cambiarNombresEtiquetas()">
   <!-- Barra de Navegacion -->
   <div class="Navegador">
     <nav class="navbar navbar-expand-lg  colornavegador">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="display: none;"><img src="../../GPT_Lo_Hace/DUAM_LOGO_negro.svg" style="display: none;" id="logo" class="logo" alt=""></a>
-        <a class="navbar-brand" href="#"><img src="../GPT_Lo_Hace/DUAM_LOGO_negro.svg" id="logo2" class="logo" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="../GPT_Lo_Hace/DUAM_LOGO_blanco.svg" id="logo" class="logo" alt=""></a>
         <button class="navbar-toggler  nav-tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item ">
-              <a class="nav-link nav-a" href="../index.html">Inicio</a>
+              <a class="nav-link nav-a" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-a" href="../universidades2.html">Universidades</a>
+              <a class="nav-link nav-a" href="universidades2.html">Universidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-a" href="../becas.html">Becas</a>
-              <li class="nav-item">
-              <a class="nav-link nav-a" href="../nosotros.html">Nosotros</a>
-              </li>
+              <a class="nav-link nav-a" href="becas.html">Becas</a>
             </li>
-            <div class="dropdown">
-              <button class="btn btn dropdown-toggle cambiacolor drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Carreras
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item secciondrop" href="../carreras.html">Pregrados</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item secciondrop" href="#">Especializaciones</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item secciondrop" href="#">Maestr&iacute;as</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item secciondrop" href="#">Doctorados</a></li>
-              </ul>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link nav-a" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn dropdown-toggle cambiacolor drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Carreras
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item secciondrop" href="carreras.html">Pregrados</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item secciondrop" href="#">Especializaciones</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item secciondrop" href="#">Maestrías</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item secciondrop" href="#">Doctorados</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
           <div class="search">
-            <input type="text" class="cambiacolor" placeholder="Escriba aqu&iacute;" id="search">
-            <button class="btn cambiacolor" id="search_icon"><a style="font-size: 20px;" class="cambiacolor" href="../buscador.html">Presiona aquí para ir al buscador</a></button>
+            <input type="text" class="cambiacolor" placeholder="Escriba aquí" id="search">
+            <button class="btn cambiacolor" id="search_icon">Presiona aquí para ir al buscador</button>
             <div class="search_bx2" style="background-color: rgb(77, 77, 77); width: 300px;">
-                <!-- <a href="linkdelauni">
-                    
-                    <div class="contentido">
-                        <h6>Nombre de la uni</h6>
-                        <p>ubicación</p>
-                    </div>
-                </a> -->
             </div>
-         </div>
+          </div>
+        </div>
+        <div class="boton-darkmode-parent">
+          <div class="boton-darkmode-child">
+            <button type="button" id="dark-mode-toggle" class="boton-dakrmode"><img src="https://svgshare.com/i/zTq.svg" alt="moon"></button>
+          </div>
         </div>
       </div>
     </nav>
   </div>
-  <div class="containerfluid tituloscarreras text-center">
-    <h6 class="tituloscarreras">Educaci&oacute;n</h6>
-    <h1>no</h1>
+    <!-- Contenedor PQRS-->
+  <div class="ayuda" >
+    <button id="mostrarOcultarFormulario">
+      <h4 class="ayuda_logo"><i class="bi bi-box-arrow-in-right"></i></h4>
+      <h4>ayuda</h4>
+    </button>
+  </div>  
+  <div class="formularioPQRS">
+    <span id="formularioPQRS">
+      <form action="comentarios.php" method="post" id="pqrsForm">
+  
+        <div class="container" >
+          <div class="row">
+            <div class="col-25">
+              <label for="correo">Nombre </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="correo">Correo electronico</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="correo" name="correo" placeholder="abcd@correo.com" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="comentario">comentario</label >
+            </div>
+            <div class="col-75">
+              <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario..." style="height:200px" required  ></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Enviar PQRS">
+          </div>
+          </form>
+        </div>
+      </form>
+    </span>
   </div>
-  <div class="d-grid gap-2">
-    <button class="btn btn botonesdecarreras" type="button" onclick="window.location.href='cienciasbasicas.html'">Carrera1</button>
-    <button class="btn btn botonesdecarreras" type="button" onclick="window.location.href='cienciasbasicas.html'">Carrera2</button>
-    <button class="btn btn botonesdecarreras" type="button" onclick="window.location.href='cienciasbasicas.html'">Carrera3</button>
-    <button class="btn btn botonesdecarreras" type="button" onclick="window.location.href='cienciasbasicas.html'">Carrera4</button>
-    <button class="btn btn botonesdecarreras" type="button" onclick="window.location.href='cienciasbasicas.html'">Carrera5</button>
+
+    <!-- Contenedor Popup-->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <p>¡La solicitud ha sido enviada <br>a su correo electronico!</p>
+      </div>
   </div>
-  <button id="dark-mode-toggle" class="btn btn-primary dark">Modo Oscuro</button>
-  <script src="../darkmode.js"></script>
+  <script src="darkmode.js"></script>
+  <script src="../botonayuda.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
-  <footer>Todos los derechos reservados &copy 2023</footer>
+</body>
+<footer>Todos los derechos reservados &copy 2023</footer>
 </html>
