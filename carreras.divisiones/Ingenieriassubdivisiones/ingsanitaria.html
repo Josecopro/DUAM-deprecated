@@ -4,64 +4,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DUAM - Directorio de Universidades del Área Metropolitana</title>
+  <title>DUAM - Directorio de Universidades del &Aacute;rea Metropolitana</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- DUAM CSS -->
-  <link rel="stylesheet" href="estilos/style.css">
-  <link rel="icon" type="image/x-icon" href="GPT_Lo_Hace/DUAM_LOGO.svg  ">
-  
-  
+  <link rel="stylesheet" href="../../estilos/style.css">
 </head>
-<body onload="cargarEstadoModoOscuro()" onload="colordeletrasdelheader()" onload="cambiarNombresEtiquetas()">
+
+<body onload="cargarEstadoModoOscuro()" onload="colordeletrasdelheader()">
   <!-- Barra de Navegacion -->
   <div class="Navegador">
     <nav class="navbar navbar-expand-lg  colornavegador">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="GPT_Lo_Hace/DUAM_LOGO_blanco.svg" id="logo" class="logo" alt=""></a>
+        <a class="navbar-brand" href="#" style="display: none;"><img src="https://svgshare.com/i/xq_.svg" style="display: none;" id="logo" class="logo" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="https://svgshare.com/i/xq_.svg" id="logo2" class="logo" alt=""></a>
         <button class="navbar-toggler  nav-tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item ">
-              <a class="nav-link nav-a" href="index.html">Inicio</a>
+              <a class="nav-link nav-a" href="../../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-a" href="universidades2.html">Universidades</a>
+              <a class="nav-link nav-a" href="../../universidades2.html">Universidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-a" href="becas.html">Becas</a>
+              <a class="nav-link nav-a" href="../../becas.html">Becas</a>
+              <li class="nav-item">
+              <a class="nav-link nav-a" href="../../nosotros.html">Nosotros</a>
+              </li>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-a" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="btn btn dropdown-toggle cambiacolor drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Carreras
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item secciondrop" href="carreras.html">Pregrados</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item secciondrop" href="#">Especializaciones</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item secciondrop" href="#">Maestrías</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item secciondrop" href="#">Doctorados</a></li>
-                </ul>
-              </div>
-            </li>
+            <div class="dropdown">
+              <button class="btn btn dropdown-toggle cambiacolor drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Carreras
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item secciondrop" href="../../carreras.html">Pregrados</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item secciondrop" href="#">Especializaciones</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item secciondrop" href="#">Maestr&iacute;as</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item secciondrop" href="#">Doctorados</a></li>
+              </ul>
+            </div>
           </ul>
           <div class="search">
-            <input type="text" class="cambiacolor" placeholder="Escriba aquí" id="search">
-            <button class="btn cambiacolor" id="search_icon">Presiona aquí para ir al buscador</button>
-            <div class="search_bx2" style="background-color: rgb(77, 77, 77); width: 300px;">
+            <input type="text" class="cambiacolor" placeholder="Escriba aqu&iacute;" id="search">
+            <button class="btn cambiacolor" id="search_icon"><a style="font-size: 20px;" class="cambiacolor" href="../../buscador.html">Presiona aquí para ir al buscador</a></button>
+            <div class="search_bx2" style="background-color: rgb(77, 77, 77); width: 300px; display: none;">
+                <!-- <a href="linkdelauni">
+                    
+                    <div class="contentido">
+                        <h6>Nombre de la uni</h6>
+                        <p>ubicación</p>
+                    </div>
+                </a> -->
             </div>
-          </div>
+         </div>
         </div>
       </div>
     </nav>
   </div>
+  <!--fin barra navegación-->
+  <!-- inicio cuerpo pagina-->
+  <div class="Pregrados_main">
+    <img src="https://i.imgur.com/ZrYGYi2.png" alt="Imagenenfermeria" class="imagen_de_fondo_pregrados">
+    <div class="margen_de_espacio"></div>
+    <div class="container-fluid fila_contenedor_pregrados">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="container contenedor_pregrados">
+            <h1 class="titulo_descripcion_pregrados">ENFERMER&Iacute;A</h1>
+            <p class="descripcion_pregrados">El pregrado de enfermer&iacute;a es un programa acad&eacute;mico de nivel universitario diseñado para preparar a estudiantes en el campo de la enfermer&iacute;a. Durante este programa, los estudiantes adquieren conocimientos te&oiacute;ricos y habilidades pr&aacute;cticas necesarias para brindar cuidados de salud efectivos a pacientes de todas las edades en una variedad de entornos de atenci&oacute;n m&eacute;dica. Los cursos suelen cubrir temas como anatom&iacute;a y fisiolog&iacute;a, farmacolog&iacute;a, &eacute;tica médica, cuidado de enfermer&iacute;a b&aacute;sico y avanzado, gestión de casos y pr&aacute;cticas cl&iacute;nicas supervisadas. Los graduados de este programa están preparados para asumir roles de enfermer&iacute;a en hospitales, cl&iacute;nicas, hogares de ancianos y otros entornos de atención médica, y desempeñan un papel fundamental en la promoción de la salud y el bienestar de los pacientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="margen_de_espacio"></div>
+    <div class="container-fluid  Universidades_en_las_que_se_encuentra bg-dark"  id="fondo_de_cuadros_JS">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>UNIVERSIDADES EN LAS QUE SE ENCUENTRA:</h1>
+          <div class="Cuadrado_anclado_js">
+            <div id="botonesContenedor" class="ingenieriasanitaria">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin de cuerpo de pagina-->
+  <!--JS-->
+  <button id="dark-mode-toggle" class="btn btn-primary dark" style="display: none;">Modo Oscuro</button>
+  <script src="../../darkmode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
