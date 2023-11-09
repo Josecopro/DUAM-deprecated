@@ -204,6 +204,49 @@ darkModeToggle.addEventListener('click', cambiarNombresEtiquetas);
 
 // Cargar el estado del modo oscuro al iniciar la página
 cargarEstadoModoOscuro();
+document.addEventListener("DOMContentLoaded", function() {
+  // Obtener el botón y la imagen
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
+  const darkModeImage = darkModeToggle.querySelector("img");
+
+  // Verificar si hay una cookie para el modo oscuro
+  const darkModeCookie = getCookie("darkMode");
+  if (darkModeCookie) {
+    darkModeImage.src = darkModeCookie === "modooscuro1" ? "GPT_Lo_Hace/modooscuro1.svg" : "GPT_Lo_Hace/modooscuro2.svg";
+  }
+
+  // Agregar evento de clic al botón
+  darkModeToggle.addEventListener("click", function() {
+    // Cambiar la imagen y guardar el estado en la cookie
+    if (darkModeImage.src.endsWith("modooscuro1.svg")) {
+      darkModeImage.src = "GPT_Lo_Hace/modooscuro2.svg";
+      setCookie("darkMode", "modooscuro2", 7);
+    } else {
+      darkModeImage.src = "GPT_Lo_Hace/modooscuro1.svg";
+      setCookie("darkMode", "modooscuro1", 7);
+    }
+  });
+
+  // Función para obtener el valor de una cookie
+  function getCookie(name) {
+    const cookies = document.cookie.split("; ");
+    for (const cookie of cookies) {
+      const [cookieName, cookieValue] = cookie.split("=");
+      if (cookieName === name) {
+        return cookieValue;
+      }
+    }
+    return null;
+  }
+
+  // Función para establecer una cookie
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + "; " + expires + "; path=/";
+  }
+});
 
 // Función para cambiar los nombres de las etiquetas <a> y guardar el estado en el almacenamiento local
 function cambiarNombresEtiquetas() {
