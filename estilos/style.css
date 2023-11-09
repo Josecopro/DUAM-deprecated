@@ -1252,3 +1252,22 @@ transition: 0.6s;
   }
   
 }   
+/*boton darkmode estilos*/
+.boton-darkmode-parent{
+  margin: 0%;
+  display: flex;
+  justify-content: flex-end;
+}
+.boton-darkmode-child{
+  align-self: flex-end;
+}
+button.boton-dakrmode{
+  border: 1px solid var(--grisoscuroDUAM);
+  padding: 7px 14px;
+  color: black;
+  border-radius: 7px;
+}
+button.boton-dakrmode:hover{
+  transition: .5s;
+  transform: scale(1.2);
+}
