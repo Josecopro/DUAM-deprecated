@@ -420,13 +420,7 @@ body {
   .decoracionslide{
     background-color: var(--grisclaroDUAM);
   }
-  .tituloscarreras{
-    font-size: 3rem;
-  }
-  
-  .botonesdecarreras{
-    background-color:var(--grisclaroDUAM);
-  }
+
   /**  INICIO CSS PREGRADOS DESCRIPCION  **/
 .titulo_descripcion_pregrados{
   margin-top: 20px;
@@ -608,9 +602,7 @@ body {
   
   
   /* javascript classes end  */
-.ingptext{
-  margin: 4%;
-  }
+
 
 /* Formulario PQRS y boton Ayuda*/
 .ayuda{
@@ -1271,3 +1263,32 @@ button.boton-dakrmode:hover{
   transition: .5s;
   transform: scale(1.2);
 }
+/*Ingenierias neceista ayuda y yo soy su salvacion*/
+.ingptext{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 4%;
+  font: x-large;
+  font-weight: 545;
+  }
+  .tituloscarreras{
+    color: var(--aguamarinaDUAM);
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  
+  .botonesdecarreras{
+    background-color:var(--grisclaroDUAM);
+    font-weight: bold;
+    padding: 21px 100px;
+    margin: .3rem;
+  }
+.botonesdecarreras:hover{
+  transform: scale(1.1);
+  color: var(--azuloscuroDUAM);
+  transition: .6s;
+  background: var(--bodyDUAM);
+}
+.bg-dark button.botonesdecarreras:hover{
+  background: #212529;
+  } 
