@@ -1312,5 +1312,5 @@ button.boton-dakrmode:hover{
   background: var(--bodyDUAM);
 }
 .bg-dark button.botonesdecarreras:hover{
-  background: #212529;
+  background: var(--blackbodyDUAM);
   } 
