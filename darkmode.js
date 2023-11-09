@@ -203,6 +203,83 @@ const DUAMBASEDEDATOS = [{
               descripcion:"debemos administrar la pagina, que loco",
               url: "carreras.divisiones/saludsubdivisiones/medicina.html",
              },
+             //subdivisiones cienciassociales cienciassocialessubdivisiones/admdeempresas.html
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Administración de empresas",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/admdeempresas.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Economía",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/economia.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Derecho",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/derecho.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Filosofía",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/filosofia.html",
+             },
+             //ciencias basicas:
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Astronomía",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciasbasicassubdivisiones/astronomia.html",
+             },
+             
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Biología",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciasbasicassubdivisiones/biologia.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Ciencias ambientales",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciasbasicassubdivisiones/cienciasambientales.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Ecología",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciasbasicassubdivisiones/ecologia.html",
+             },
+              {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Química",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciasbasicassubdivisiones/quimica.html",
+             },
+             //servicios:
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Produccion agricola",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/serviviossubdivisiones/tecenproduccionagricola.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Química",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/serviviossubdivisiones/tecnengestionagropecuaria.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Química",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/serviviossubdivisiones/tecenproduccionagricola.html",
+             },
+             //serviviossubdivisiones/tecnengestionagropecuaria.html
     ]
 
 let search_bx2 = document.getElementsByClassName('search_bx2')[0];
@@ -504,7 +581,7 @@ function cambiarNombresEtiquetas() {
     { nombre: 'Fundación Universitaria Ceipa', url: 'https://ceipa.edu.co/', carreras:'contaduriapublica//administraciondeempresas//administraciondemercadeo//administraciondenegociosinternacionales//administracionfinanciera//administracionhumana' },
     { nombre: 'Universidad Nacional Abierta y a Distancia', url: ' https://www.unad.edu.co/', carreras:'tecnologiaengestionagropecuaria//tecnologiaengestioncomercialydenegocios//tecnologiaengestiondeempresasyorganizacionessolidarias//tecnologiaengestiondeobrascivilesyconstrucciones//tecnologiaengestiondetransportes//tecnologiaengestionindustrial//administraciondeempresas//contaduriapublica//economia//negociosinternacionales//tecnologiaenmanejoycomercializacionagroforestal//tecnologiaenproduccionagricola//tecnologiaenproduccionanimal//agronomia//ingenieriaagroforestal//ingenieriaambiental//zootecnia//tecnologiaenautomatizacionelectronicaindustrial//tecnologiaencalidadalimentaria//tecnologiaendesarrollodesoftware//tecnologiaenredesinalambricas//tecnologiaenlogisticaindustrial//tecnologiaenproducciondeaudio//disenoindustrial//ingenieriadealimentos//ingenieriadesistemas//ingenieriaentelecomunicaciones//ingenieriaelectronica//ingenieriaindustrial//ingenieriamultimedia//artesvisuales//comunicacionsocial//filosofia//gestiondeportiva//musica//psicologia//sociologia//tecnologiaenradiologiaeimagenesdiagnosticas//tecnologiaenregenciadefarmacia//tecnologiaenseguridadysaludeneltrabajo//administracionensalud//profesionalenseguridadysaludeneltrabajo//tecnologiaengestionjuridicadelainformacion//cienciaspoliticas//derecho ' },
     { nombre: 'Universidad Autónoma Latinoamericana', url: 'https://www.unaula.edu.co/', carreras:'administraciondeempresas//contaduriapublica//derecho//economia//licenciaturaencienciassociales//ingenieriainformatica//ingenieriaindustrial' },
-    { nombre: 'Universidad Nacional', url: 'https://medellin.unal.edu.co/', carreras:'arquitectura//artesplasticas//construccion//estadistica//ingenieriabiologica//ingenieriafisica//matematicas//tecnologiaforestal//ingenieriaagricola//ingenieriaagronomica//ingenieriaforestal//zootecnia//cienciaspoliticas//economia//historia//ingenieriaadministrativa//ingenieriaambiental//ingenieriacivil//ingenieriadecontrol//ingenieriademinasymetalurgia//ingenieriadepetroleos//ingenieriadesistemaseinformatica//ingenieriaelectrica//ingenieriageologica//ingenieriaindustrial//ingenieriamecanica//ingenieriaquimica' },
+    { nombre: 'Universidad Nacional', url: 'https://medellin.unal.edu.co/', carreras:'arquitectura//artesplasticas//construccion//estadistica//ingenieriabiologica//ingenieriafisica//matematicas//tecnologiaforestal//ingenieriaagricola//ingenieriaagronomica//ingenieriaforestal//zootecnia//cienciaspoliticas//economia//historia//ingenieriaadministrativa//ingenieriaambiental//ingenieriacivil//ingenieriadecontrol//ingenieriademinasymetalurgia//ingenieriadepetroleos//ingenieriadesistemas//ingenieriaelectrica//ingenieriageologica//ingenieriaindustrial//ingenieriamecanica//ingenieriaquimica' },
     { nombre: 'Universidad de Antioquia', url: 'https://www.udea.edu.co/', carreras:'artesplasticas//licenciaturaenartesplasticas//artedramatico//licenciaturaenartesescenicas//licenciaturaendanzas//musica-canto//musica//licenciaturaenmusica//gestionnatural//tecnologiaengestiondeinsumosagropecuarios//medicinaveterinaria//zootecnia//administraciondeempresas//contaduriapublica//economia//astronomia//biologia//estadistica//fisica//matematicas//quimica//tecnologiaenregenciadefarmacia//quimicafarmaceutica//ingenieriadealimentos//antropologia//historia//psicologia//sociologia//trabajosocial//comunicaciones//comunicacionaudiovisualymultimedial//filologia-hispanica//periodismo//derecho//cienciaspoliticas//licenciaturaencienciasnaturales//licenciaturaencienciassociales//licenciaturaeneducacionbasicaprimaria//licenciaturaeneducacionespecial//licenciaturaeneducacioninfantil//licenciaturaenfisica//licenciaturaenliteraturaylenguacastellana//licenciaturaenmatematicas//licenciaturaenpedagogiadelamadretierra//pedagogia//enfermeria//bioingenieria//ingenieriaambiental-virtual//ingenieriaambiental//ingenieriacivil//ingenieriaelectrica//ingenieriaelectronica//ingenieriademateriales//ingenieriamecanica//ingenieriasanitaria//ingenieriaquimica//ingenieriaindustrial//ingenieriaindustrial-virtual//ingenieriaentelecomunicaciones//ingenieriaentelecomunicaciones-virtual//ingenieriadesistemas//ingenieriadesistemas-virtual//medicina//instrumentacionquirurgica//administracionambientalysanitaria//administracionensalud//gerenciaensistemasdeinformacionensalud//odontologia//traduccioningles-frances-espanol//licenciaturaenlenguasextrangerasconenfasiseninglesyfrances//archivista//bibliotecologia//microbiologiaindustrialyambiental//microbiologiaybioanalisis//nutricionydietetica//filosofia//licenciaturaenfilosofia//entrenamientodeportivo//licenciaturaeneducacionfisica' },
     { nombre: 'Instituto Tecnológico Metropolitano-ITM', url: 'https://www.itm.edu.co/', carreras:'tecnologiaenanalisisdecostosypresupuestos//tecnologiaenanalisisdecostosypresupuestos-virtual//tecnologiaenautomatizacionelectronica//tecnologiaenconstrucciondeacabadosarquitectonicos//tecnologiaencontroldelacalidad//tecnologiaendesarrollodeaplicacionesparadispositivosmoviles//' },
     { nombre: 'Universidad Eafit', url: ' https://www.eafit.edu.co/', carreras:'' },
