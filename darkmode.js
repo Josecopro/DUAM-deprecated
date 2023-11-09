@@ -269,7 +269,7 @@ const DUAMBASEDEDATOS = [{
              },
              {
               img: "si vamos a poner imagenes en el buscador aquí iran",
-              title: "Química",
+              title: "Tecnologia en gestion agropecuaria",
               descripcion:"debemos administrar la pagina, que loco",
               url: "carreras.divisiones/serviviossubdivisiones/tecnengestionagropecuaria.html",
              },
@@ -280,6 +280,125 @@ const DUAMBASEDEDATOS = [{
               url: "carreras.divisiones/serviviossubdivisiones/tecenproduccionagricola.html",
              },
              //serviviossubdivisiones/tecnengestionagropecuaria.html
+             //universidades:
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad nacional",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://admisiones.unal.edu.co/pregrado/",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad de antioquía",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.udea.edu.co/wps/portal/udea/web/inicio/!ut/p/z1/hY7LDoIwEEW_xQVbOrSg4K5BYkDCIzERuzFgasEAJYDw-zbqxsTH7O7ccyaDGMoQa_OpEvlYyTavVT6y5SlKLc_ALoSxTzxInchKyNbH5oqgwz-AqRq-DAXlswdiOy42qAkh7AwLaOol0T52k02AX8CPGwFiopbF813aFsQWiPX8wnve67derctx7Ia1BhrM86wLKUXN9bNsNPiklHIYUfZOoq7J4GrVU0gXizthmbDl/dz/d5/L2dBISEvZ0FBIS9nQSEh/",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad de medellín",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://udemedellin.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad Eafit",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https:www.eafit.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad pontifice bolivariana",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.upb.edu.co/es/home",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad pontifice bolivariana",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.upb.edu.co/es/home",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad san buenaventura",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.usbmed.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad san buenaventura",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.usbmed.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Colegio mayor de antioquía",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.colmayor.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Institución universitaria de envigado",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.iue.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Institución universitaria pascual bravo",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.pascualbravo.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "jaime izasa cadavid",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.politecnicojic.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "ITM instituto tecnologico metropolitano",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.itm.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad nacional abierta y a distancia",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.unad.edu.co",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad EAN",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://universidadean.edu.co",
+             },
+             //https://www.unaula.edu.co
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Universidad UNAULA",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "https://www.unaula.edu.co",
+             },
+           //https://www.areandina.edu.co
+           {
+            img: "si vamos a poner imagenes en el buscador aquí iran",
+            title: "Fundacion universitaria del area andina",
+            descripcion:"debemos administrar la pagina, que loco",
+            url: "https://www.areandina.edu.co",
+           },
+           //https://www.unipiloto.edu.co
+           {
+            img: "si vamos a poner imagenes en el buscador aquí iran",
+            title: "Corporacion universitaria piloto de colombia",
+            descripcion:"debemos administrar la pagina, que loco",
+            url: "https://www.unipiloto.edu.co",
+           },
+           //https://www.uan.edu.co/es/
+          {
+            img: "si vamos a poner imagenes en el buscador aquí iran",
+            title: "Universidad antonio nariño",
+            descripcion:"debemos administrar la pagina, que loco",
+            url: "https://www.uan.edu.co/es/",
+           },
     ]
 
 let search_bx2 = document.getElementsByClassName('search_bx2')[0];
