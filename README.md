@@ -5,13 +5,13 @@ DUAM es un proyecto que busca facilitar la busqueda de universidades en el area 
 *Becas & relacionados
 *Informacion sobre cada una de las carreras disponibles
 *Las universidades que tienen cada una de estas carreras
-# Colaboradores
+## Colaboradores
 *Juan Jose Becerra Bedoya (Front end Developer)
 *Yesid Maldonado Carvajal (Documentador tecnico)
 *Karina Silva Durango (DB Developer)
 *Julian David Oviedo Ramirez (Back end Developer)
 
-# Modo de instalacion
+## Modo de instalacion
  El repositorio puede ser clonado, o forkeado, al igual que descargado como un archivo ".zip"
  La base de datos pqrs.php, se puede correr para crearlo, para acceder a los comentarios, se hace desde /(carpeta)/adminpage.php
  
