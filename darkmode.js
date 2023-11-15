@@ -212,21 +212,33 @@ const DUAMBASEDEDATOS = [{
              },
              {
               img: "si vamos a poner imagenes en el buscador aquí iran",
-              title: "Economía",
+              title: "Administración de Mercadeo",
               descripcion:"debemos administrar la pagina, que loco",
-              url: "carreras.divisiones/cienciassocialessubdivisiones/economia.html",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/admdemercadeo.html",
              },
              {
               img: "si vamos a poner imagenes en el buscador aquí iran",
-              title: "Derecho",
+              title: "Administración Financiera",
               descripcion:"debemos administrar la pagina, que loco",
-              url: "carreras.divisiones/cienciassocialessubdivisiones/derecho.html",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/admfinanciera.html",
              },
              {
               img: "si vamos a poner imagenes en el buscador aquí iran",
-              title: "Filosofía",
+              title: "Administración de Negocios",
               descripcion:"debemos administrar la pagina, que loco",
-              url: "carreras.divisiones/cienciassocialessubdivisiones/filosofia.html",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/admindenegocios.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Administración Humana",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/adminhumana.html",
+             },
+             {
+              img: "si vamos a poner imagenes en el buscador aquí iran",
+              title: "Administración Pública",
+              descripcion:"debemos administrar la pagina, que loco",
+              url: "carreras.divisiones/cienciassocialessubdivisiones/admpublica.html",
              },
              //ciencias basicas:
              {
