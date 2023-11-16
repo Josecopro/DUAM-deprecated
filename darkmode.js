@@ -103,6 +103,18 @@ const DUAMBASEDEDATOS = [{
         },
         {
           img: "https://svgshare.com/i/xq_.svg",
+          title: "Ingeniería Ambiental",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/ingambiental.html",
+        },
+        {
+          img: "https://svgshare.com/i/xq_.svg",
+          title: "Bioingeniería",
+          descripcion:"Aqui encontraras las carreras",
+          url: "carreras.divisiones/Ingenieriassubdivisiones/bioingenieria.html",
+        },
+        {
+          img: "https://svgshare.com/i/xq_.svg",
           title: "Ingeniería de sistemas",
           descripcion:"Aqui encontraras las carreras",
           url: "carreras.divisiones/Ingenieriassubdivisiones/ingdesistemas.html",
@@ -135,6 +147,7 @@ const DUAMBASEDEDATOS = [{
           descripcion:"Aqui encontraras las carreras",
           url: "carreras.divisiones/cienciassocialessubdivisiones/admindenegocios.html",
         },
+        
         {
         img: "si vamos a poner imagenes en el buscador aquí iran",
         title: "???",
